@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RMPApp", "RMPApp\RMPApp.vbproj", "{459D2280-6275-403B-836E-4C3AA32BA0F6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CountPoint", "CountPoint\CountPoint.vbproj", "{6B6F217D-06B3-4135-89FE-3DA5393EA31A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{459D2280-6275-403B-836E-4C3AA32BA0F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459D2280-6275-403B-836E-4C3AA32BA0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459D2280-6275-403B-836E-4C3AA32BA0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459D2280-6275-403B-836E-4C3AA32BA0F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6F217D-06B3-4135-89FE-3DA5393EA31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6F217D-06B3-4135-89FE-3DA5393EA31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6F217D-06B3-4135-89FE-3DA5393EA31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6F217D-06B3-4135-89FE-3DA5393EA31A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40D821C3-0D5E-4BDD-AE4A-97B8A1668AA2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsharga" targetNamespace="http://tempuri.org/dsharga.xsd" xmlns:mstns="http://tempuri.org/dsharga.xsd" xmlns="http://tempuri.org/dsharga.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsharga" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsharga" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsharga">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dthargabahanbaku" msprop:Generator_RowEvHandlerName="dthargabahanbakuRowChangeEventHandler" msprop:Generator_RowDeletedName="dthargabahanbakuRowDeleted" msprop:Generator_RowDeletingName="dthargabahanbakuRowDeleting" msprop:Generator_RowEvArgName="dthargabahanbakuRowChangeEvent" msprop:Generator_TablePropName="dthargabahanbaku" msprop:Generator_RowChangedName="dthargabahanbakuRowChanged" msprop:Generator_UserTableName="dthargabahanbaku" msprop:Generator_RowChangingName="dthargabahanbakuRowChanging" msprop:Generator_RowClassName="dthargabahanbakuRow" msprop:Generator_TableClassName="dthargabahanbakuDataTable" msprop:Generator_TableVarName="tabledthargabahanbaku">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DetailID" msprop:Generator_ColumnPropNameInTable="DetailIDColumn" msprop:Generator_ColumnPropNameInRow="DetailID" msprop:Generator_UserColumnName="DetailID" msprop:Generator_ColumnVarNameInTable="columnDetailID" type="xs:string" minOccurs="0" />
+              <xs:element name="KodeHargaString" msprop:Generator_ColumnPropNameInTable="KodeHargaStringColumn" msprop:Generator_ColumnPropNameInRow="KodeHargaString" msprop:Generator_UserColumnName="KodeHargaString" msprop:Generator_ColumnVarNameInTable="columnKodeHargaString" type="xs:string" minOccurs="0" />
+              <xs:element name="KodeBahanBaku" msprop:Generator_ColumnPropNameInTable="KodeBahanBakuColumn" msprop:Generator_ColumnPropNameInRow="KodeBahanBaku" msprop:Generator_UserColumnName="KodeBahanBaku" msprop:Generator_ColumnVarNameInTable="columnKodeBahanBaku" type="xs:string" minOccurs="0" />
+              <xs:element name="BahanBaku" msprop:Generator_ColumnPropNameInTable="BahanBakuColumn" msprop:Generator_ColumnPropNameInRow="BahanBaku" msprop:Generator_UserColumnName="BahanBaku" msprop:Generator_ColumnVarNameInTable="columnBahanBaku" type="xs:string" minOccurs="0" />
+              <xs:element name="IDPancang" msprop:Generator_ColumnPropNameInTable="IDPancangColumn" msprop:Generator_ColumnPropNameInRow="IDPancang" msprop:Generator_UserColumnName="IDPancang" msprop:Generator_ColumnVarNameInTable="columnIDPancang" type="xs:int" minOccurs="0" />
+              <xs:element name="Pancang" msprop:Generator_ColumnPropNameInTable="PancangColumn" msprop:Generator_ColumnPropNameInRow="Pancang" msprop:Generator_UserColumnName="Pancang" msprop:Generator_ColumnVarNameInTable="columnPancang" type="xs:string" minOccurs="0" />
+              <xs:element name="Asal" msprop:Generator_ColumnPropNameInTable="AsalColumn" msprop:Generator_ColumnPropNameInRow="Asal" msprop:Generator_UserColumnName="Asal" msprop:Generator_ColumnVarNameInTable="columnAsal" type="xs:string" minOccurs="0" />
+              <xs:element name="KodeGrade" msprop:Generator_ColumnPropNameInTable="KodeGradeColumn" msprop:Generator_ColumnPropNameInRow="KodeGrade" msprop:Generator_UserColumnName="KodeGrade" msprop:Generator_ColumnVarNameInTable="columnKodeGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="Grade" msprop:Generator_ColumnPropNameInTable="GradeColumn" msprop:Generator_ColumnPropNameInRow="Grade" msprop:Generator_UserColumnName="Grade" msprop:Generator_ColumnVarNameInTable="columnGrade" type="xs:string" minOccurs="0" />
+              <xs:element name="HargaP1" msprop:Generator_ColumnPropNameInRow="HargaP1" msprop:Generator_ColumnPropNameInTable="HargaP1Column" msprop:Generator_ColumnVarNameInTable="columnHargaP1" msprop:Generator_UserColumnName="HargaP1" type="xs:string" minOccurs="0" />
+              <xs:element name="HargaP2" msprop:Generator_ColumnPropNameInTable="HargaP2Column" msprop:Generator_ColumnPropNameInRow="HargaP2" msprop:Generator_UserColumnName="HargaP2" msprop:Generator_ColumnVarNameInTable="columnHargaP2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Periode" msprop:Generator_ColumnPropNameInTable="PeriodeColumn" msprop:Generator_ColumnPropNameInRow="Periode" msprop:Generator_UserColumnName="Periode" msprop:Generator_ColumnVarNameInTable="columnPeriode" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_UserColumnName="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_UserColumnName="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LastUpdatedBy" msprop:Generator_ColumnPropNameInTable="LastUpdatedByColumn" msprop:Generator_ColumnPropNameInRow="LastUpdatedBy" msprop:Generator_UserColumnName="LastUpdatedBy" msprop:Generator_ColumnVarNameInTable="columnLastUpdatedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="LastUpdatedDate" msprop:Generator_ColumnPropNameInTable="LastUpdatedDateColumn" msprop:Generator_ColumnPropNameInRow="LastUpdatedDate" msprop:Generator_UserColumnName="LastUpdatedDate" msprop:Generator_ColumnVarNameInTable="columnLastUpdatedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Computer" msprop:Generator_ColumnPropNameInTable="ComputerColumn" msprop:Generator_ColumnPropNameInRow="Computer" msprop:Generator_UserColumnName="Computer" msprop:Generator_ColumnVarNameInTable="columnComputer" type="xs:string" minOccurs="0" />
+              <xs:element name="ComputerDate" msprop:Generator_ColumnPropNameInTable="ComputerDateColumn" msprop:Generator_ColumnPropNameInRow="ComputerDate" msprop:Generator_UserColumnName="ComputerDate" msprop:Generator_ColumnVarNameInTable="columnComputerDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Approve1By" msprop:Generator_ColumnPropNameInTable="Approve1ByColumn" msprop:Generator_ColumnPropNameInRow="Approve1By" msprop:Generator_UserColumnName="Approve1By" msprop:Generator_ColumnVarNameInTable="columnApprove1By" type="xs:string" minOccurs="0" />
+              <xs:element name="Approve1Date" msprop:Generator_ColumnPropNameInTable="Approve1DateColumn" msprop:Generator_ColumnPropNameInRow="Approve1Date" msprop:Generator_UserColumnName="Approve1Date" msprop:Generator_ColumnVarNameInTable="columnApprove1Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Approve2By" msprop:Generator_ColumnPropNameInTable="Approve2ByColumn" msprop:Generator_ColumnPropNameInRow="Approve2By" msprop:Generator_UserColumnName="Approve2By" msprop:Generator_ColumnVarNameInTable="columnApprove2By" type="xs:string" minOccurs="0" />
+              <xs:element name="Approve2Date" msprop:Generator_ColumnPropNameInTable="Approve2DateColumn" msprop:Generator_ColumnPropNameInRow="Approve2Date" msprop:Generator_UserColumnName="Approve2Date" msprop:Generator_ColumnVarNameInTable="columnApprove2Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ttapv1" msprop:Generator_UserColumnName="ttapv1" msprop:Generator_ColumnPropNameInTable="ttapv1Column" msprop:Generator_ColumnPropNameInRow="ttapv1" msprop:Generator_ColumnVarNameInTable="columnttapv1" type="xs:string" minOccurs="0" />
+              <xs:element name="ttapv2" msprop:Generator_UserColumnName="ttapv2" msprop:Generator_ColumnPropNameInTable="ttapv2Column" msprop:Generator_ColumnPropNameInRow="ttapv2" msprop:Generator_ColumnVarNameInTable="columnttapv2" type="xs:string" minOccurs="0" />
+              <xs:element name="IsBahanBakuChanged" msprop:Generator_UserColumnName="IsBahanBakuChanged" msprop:Generator_ColumnPropNameInTable="IsBahanBakuChangedColumn" msprop:Generator_ColumnPropNameInRow="IsBahanBakuChanged" msprop:Generator_ColumnVarNameInTable="columnIsBahanBakuChanged" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

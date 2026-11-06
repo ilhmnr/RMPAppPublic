@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsMonRkpKapalPcg" targetNamespace="http://tempuri.org/DsMonRkpKapalPcg.xsd" xmlns:mstns="http://tempuri.org/DsMonRkpKapalPcg.xsd" xmlns="http://tempuri.org/DsMonRkpKapalPcg.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsMonRkpKapalPcg" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DsMonRkpKapalPcg" msprop:Generator_UserDSName="DsMonRkpKapalPcg">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtMonRkpKplPcg" msprop:Generator_TableClassName="dtMonRkpKplPcgDataTable" msprop:Generator_TableVarName="tabledtMonRkpKplPcg" msprop:Generator_TablePropName="dtMonRkpKplPcg" msprop:Generator_RowDeletingName="dtMonRkpKplPcgRowDeleting" msprop:Generator_RowChangingName="dtMonRkpKplPcgRowChanging" msprop:Generator_RowEvHandlerName="dtMonRkpKplPcgRowChangeEventHandler" msprop:Generator_RowDeletedName="dtMonRkpKplPcgRowDeleted" msprop:Generator_UserTableName="dtMonRkpKplPcg" msprop:Generator_RowChangedName="dtMonRkpKplPcgRowChanged" msprop:Generator_RowEvArgName="dtMonRkpKplPcgRowChangeEvent" msprop:Generator_RowClassName="dtMonRkpKplPcgRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pancang" msprop:Generator_ColumnVarNameInTable="columnPancang" msprop:Generator_ColumnPropNameInRow="Pancang" msprop:Generator_ColumnPropNameInTable="PancangColumn" msprop:Generator_UserColumnName="Pancang" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaKapal" msprop:Generator_ColumnVarNameInTable="columnNamaKapal" msprop:Generator_ColumnPropNameInRow="NamaKapal" msprop:Generator_ColumnPropNameInTable="NamaKapalColumn" msprop:Generator_UserColumnName="NamaKapal" type="xs:string" minOccurs="0" />
+              <xs:element name="ChekinDate" msprop:Generator_ColumnVarNameInTable="columnChekinDate" msprop:Generator_ColumnPropNameInRow="ChekinDate" msprop:Generator_ColumnPropNameInTable="ChekinDateColumn" msprop:Generator_UserColumnName="ChekinDate" type="xs:string" minOccurs="0" />
+              <xs:element name="StatusBooking" msprop:Generator_ColumnVarNameInTable="columnStatusBooking" msprop:Generator_ColumnPropNameInRow="StatusBooking" msprop:Generator_ColumnPropNameInTable="StatusBookingColumn" msprop:Generator_UserColumnName="StatusBooking" type="xs:string" minOccurs="0" />
+              <xs:element name="Kap" msprop:Generator_ColumnVarNameInTable="columnKap" msprop:Generator_ColumnPropNameInRow="Kap" msprop:Generator_ColumnPropNameInTable="KapColumn" msprop:Generator_UserColumnName="Kap" type="xs:string" minOccurs="0" />
+              <xs:element name="TripID" msprop:Generator_ColumnVarNameInTable="columnTripID" msprop:Generator_ColumnPropNameInRow="TripID" msprop:Generator_ColumnPropNameInTable="TripIDColumn" msprop:Generator_UserColumnName="TripID" type="xs:string" minOccurs="0" />
+              <xs:element name="Tujuan" msprop:Generator_ColumnVarNameInTable="columnTujuan" msprop:Generator_ColumnPropNameInRow="Tujuan" msprop:Generator_ColumnPropNameInTable="TujuanColumn" msprop:Generator_UserColumnName="Tujuan" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

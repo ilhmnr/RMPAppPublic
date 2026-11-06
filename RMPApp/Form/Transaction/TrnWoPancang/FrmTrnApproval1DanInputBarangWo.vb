@@ -1,0 +1,3 @@
+﻿Public Class FrmTrnApproval1DanInputBarangWo
+
+End Class

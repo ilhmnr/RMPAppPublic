@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSMonLaporanKelapaBPI" targetNamespace="http://tempuri.org/DSMonLaporanKelapaBPI.xsd" xmlns:mstns="http://tempuri.org/DSMonLaporanKelapaBPI.xsd" xmlns="http://tempuri.org/DSMonLaporanKelapaBPI.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSMonLaporanKelapaBPI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSMonLaporanKelapaBPI" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSMonLaporanKelapaBPI">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtInformasiPenerimaanBahanBaku" msprop:Generator_RowClassName="dtInformasiPenerimaanBahanBakuRow" msprop:Generator_RowEvHandlerName="dtInformasiPenerimaanBahanBakuRowChangeEventHandler" msprop:Generator_RowDeletedName="dtInformasiPenerimaanBahanBakuRowDeleted" msprop:Generator_RowDeletingName="dtInformasiPenerimaanBahanBakuRowDeleting" msprop:Generator_RowEvArgName="dtInformasiPenerimaanBahanBakuRowChangeEvent" msprop:Generator_TablePropName="dtInformasiPenerimaanBahanBaku" msprop:Generator_RowChangedName="dtInformasiPenerimaanBahanBakuRowChanged" msprop:Generator_UserTableName="dtInformasiPenerimaanBahanBaku" msprop:Generator_RowChangingName="dtInformasiPenerimaanBahanBakuRowChanging" msprop:Generator_TableClassName="dtInformasiPenerimaanBahanBakuDataTable" msprop:Generator_TableVarName="tabledtInformasiPenerimaanBahanBaku">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pancang" msprop:Generator_UserColumnName="Pancang" msprop:Generator_ColumnPropNameInTable="PancangColumn" msprop:Generator_ColumnPropNameInRow="Pancang" msprop:Generator_ColumnVarNameInTable="columnPancang" type="xs:string" minOccurs="0" />
+              <xs:element name="Jenis" msprop:Generator_UserColumnName="Jenis" msprop:Generator_ColumnPropNameInTable="JenisColumn" msprop:Generator_ColumnPropNameInRow="Jenis" msprop:Generator_ColumnVarNameInTable="columnJenis" type="xs:string" minOccurs="0" />
+              <xs:element name="NettoA" msprop:Generator_UserColumnName="NettoA" msprop:Generator_ColumnPropNameInTable="NettoAColumn" msprop:Generator_ColumnPropNameInRow="NettoA" msprop:Generator_ColumnVarNameInTable="columnNettoA" type="xs:string" minOccurs="0" />
+              <xs:element name="PersenNettoA" msprop:Generator_UserColumnName="PersenNettoA" msprop:Generator_ColumnPropNameInTable="PersenNettoAColumn" msprop:Generator_ColumnPropNameInRow="PersenNettoA" msprop:Generator_ColumnVarNameInTable="columnPersenNettoA" type="xs:string" minOccurs="0" />
+              <xs:element name="NettoB" msprop:Generator_UserColumnName="NettoB" msprop:Generator_ColumnPropNameInTable="NettoBColumn" msprop:Generator_ColumnPropNameInRow="NettoB" msprop:Generator_ColumnVarNameInTable="columnNettoB" type="xs:string" minOccurs="0" />
+              <xs:element name="PersenNettoB" msprop:Generator_UserColumnName="PersenNettoB" msprop:Generator_ColumnPropNameInTable="PersenNettoBColumn" msprop:Generator_ColumnPropNameInRow="PersenNettoB" msprop:Generator_ColumnVarNameInTable="columnPersenNettoB" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalNetto" msprop:Generator_UserColumnName="TotalNetto" msprop:Generator_ColumnPropNameInTable="TotalNettoColumn" msprop:Generator_ColumnPropNameInRow="TotalNetto" msprop:Generator_ColumnVarNameInTable="columnTotalNetto" type="xs:string" minOccurs="0" />
+              <xs:element name="RataPerhari" msprop:Generator_UserColumnName="RataPerhari" msprop:Generator_ColumnPropNameInTable="RataPerhariColumn" msprop:Generator_ColumnPropNameInRow="RataPerhari" msprop:Generator_ColumnVarNameInTable="columnRataPerhari" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

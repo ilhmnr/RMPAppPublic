@@ -1,0 +1,3248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{459D2280-6275-403B-836E-4C3AA32BA0F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RMPApp.My.MyApplication</StartupObject>
+    <RootNamespace>RMPApp</RootNamespace>
+    <AssemblyName>RMPApp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RMPApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RMPApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cc.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Umum\bin\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="BespokeFusion, Version=1.0.1.10, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialMessageBox.1.0.0.11\lib\BespokeFusion.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1DataExtender.2, Version=2.0.20113.81, Culture=neutral, PublicKeyToken=7c4b5683f80b910e, processorArchitecture=MSIL" />
+    <Reference Include="C1.C1Excel.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.C1Excel.4.5.20193.398\lib\net452\C1.C1Excel.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.C1Pdf.2, Version=2.0.20173.282, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.C1Report.2, Version=2.0.20173.282, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL" />
+    <Reference Include="C1.C1Zip.4, Version=4.0.20173.282, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+    <Reference Include="C1.C1Zip.4.5.2, Version=4.5.20232.620, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.C1Zip.4.5.20232.620\lib\net452\C1.C1Zip.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.2, Version=2.0.20173.282, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.4, Version=4.0.20173.282, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.4.5.20193.398\lib\net452\C1.Win.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.BarCode.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.BarCode.4.5.20193.398\lib\net452\C1.Win.BarCode.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.Bitmap.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.Bitmap.4.5.20193.398\lib\net452\C1.Win.Bitmap.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.2, Version=2.0.20173.282, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1DX.4, Version=4.0.20173.282, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04" />
+    <Reference Include="C1.Win.C1DX.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.C1DX.4.5.20193.398\lib\net452\C1.Win.C1DX.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1DynamicHelp.2, Version=2.0.20173.282, Culture=neutral, PublicKeyToken=f95c5890a3995862, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.C1FlexGrid.4.5.20193.398\lib\net452\C1.Win.C1FlexGrid.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.GroupPanel.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.C1FlexGrid.4.5.20193.398\lib\net452\C1.Win.C1FlexGrid.GroupPanel.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.ImportExport.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.C1FlexGrid.4.5.20193.398\lib\net452\C1.Win.C1FlexGrid.ImportExport.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.SearchPanel.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.C1FlexGrid.4.5.20193.398\lib\net452\C1.Win.C1FlexGrid.SearchPanel.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2, Version=4.5.20193.398, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <HintPath>..\packages\C1.Win.C1Input.4.5.20193.398\lib\net452\C1.Win.C1Input.4.5.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1InputPanel.2, Version=2.0.20173.282, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1SplitContainer.2, Version=2.0.20173.282, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Themes.2, Version=2.0.20173.282, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL" />
+    <Reference Include="ClosedXML, Version=0.75.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.75.0\lib\net40-client\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>.\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="HarfBuzzSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\HarfBuzzSharp.7.3.0.3\lib\net462\HarfBuzzSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AcroPDFLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveChartsCore, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc92a3e13d40c573, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveChartsCore.2.0.0-rc5.4\lib\net462\LiveChartsCore.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveChartsCore.SkiaSharpView, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc92a3e13d40c573, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveChartsCore.SkiaSharpView.2.0.0-rc5.4\lib\net462\LiveChartsCore.SkiaSharpView.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveChartsCore.SkiaSharpView.WinForms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc92a3e13d40c573, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveChartsCore.SkiaSharpView.WinForms.2.0.0-rc5.4\lib\net462\LiveChartsCore.SkiaSharpView.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Connections.Abstractions, Version=9.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Connections.Abstractions.9.0.4\lib\net462\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Client, Version=9.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Connections.Client.9.0.4\lib\net462\Microsoft.AspNetCore.Http.Connections.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Common, Version=9.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Http.Connections.Common.9.0.4\lib\net462\Microsoft.AspNetCore.Http.Connections.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client, Version=9.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Client.9.0.4\lib\net462\Microsoft.AspNetCore.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client.Core, Version=9.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Client.Core.9.0.4\lib\net462\Microsoft.AspNetCore.SignalR.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Common, Version=9.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Common.9.0.4\lib\net462\Microsoft.AspNetCore.SignalR.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Protocols.Json, Version=9.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Protocols.Json.9.0.4\lib\net462\Microsoft.AspNetCore.SignalR.Protocols.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.4\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.TimeProvider, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.TimeProvider.9.0.4\lib\net462\Microsoft.Bcl.TimeProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=9.0.0.4, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.9.0.4\lib\net462\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=9.0.0.4, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.9.0.4\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Features, Version=9.0.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Features.9.0.4\lib\net462\Microsoft.Extensions.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=9.0.0.4, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.9.0.4\lib\net462\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=9.0.0.4, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.9.0.4\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=9.0.0.4, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.9.0.4\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=9.0.0.4, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.9.0.4\lib\net462\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common.resources">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization.resources">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design.resources">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms.resources">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.3.1.0\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=3.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.GLControl.3.1.0\lib\net20\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.2.88.9\lib\net462\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.HarfBuzz, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.HarfBuzz.2.88.9\lib\net462\SkiaSharp.HarfBuzz.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.Desktop.Common, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.Views.Desktop.Common.2.88.9\lib\net462\SkiaSharp.Views.Desktop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SkiaSharp.Views.WindowsForms, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.Views.WindowsForms.2.88.9\lib\net462\SkiaSharp.Views.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=8.9.2.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDF.8.9.2\lib\net40\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=18.4460.0.33, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Compression.Base.18.4.0.33\lib\net46\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing, Version=29.1462.41.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.29.1.41\lib\net462\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=18.4460.0.33, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Pdf.WinForms.18.4.0.33\lib\net46\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.9.0.4\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.7.3\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Pipelines, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.9.0.4\lib\net462\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Net.ServerSentEvents, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.ServerSentEvents.9.0.4\lib\net462\System.Net.ServerSentEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.9.0.4\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.9.0.4\lib\net462\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=9.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.9.0.4\lib\net462\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.4778.30637, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThoughtWorks.QRCode.1.1.0\lib\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.6.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.ThemeVS2015.3.0.6\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="XanderUI">
+      <HintPath>Libs\XanderUI.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.10.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.10\lib\net48\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.10.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.10\lib\net48\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Form\Master\Harga\Harga Bahan Baku KG\FrmMstHargaBahanBakuKg.Designer.vb">
+      <DependentUpon>FrmMstHargaBahanBakuKg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Bahan Baku KG\FrmMstHargaBahanBakuKg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Premi Asuransi\FrmMstHargaPremiAsuransi.Designer.vb">
+      <DependentUpon>FrmMstHargaPremiAsuransi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Premi Asuransi\FrmMstHargaPremiAsuransi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Inventaris\FrmMstInventarisMasuk.Designer.vb">
+      <DependentUpon>FrmMstInventarisMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Inventaris\FrmMstInventarisMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Inventaris\FrmMstItemInventory.Designer.vb">
+      <DependentUpon>FrmMstItemInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Inventaris\FrmMstItemInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Inventaris\FrmMstSatuanItem.Designer.vb">
+      <DependentUpon>FrmMstSatuanItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Inventaris\FrmMstSatuanItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKapalShow.Designer.vb">
+      <DependentUpon>FrmMstKapalShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKapalShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Personil Pancang\FrmMstUangMakan.Designer.vb">
+      <DependentUpon>FrmMstUangMakan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Personil Pancang\FrmMstUangMakan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstLevelBonusPengawasFind.Designer.vb">
+      <DependentUpon>FrmMstLevelBonusPengawasFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstLevelBonusPengawasFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstLevelBonusPengawas.Designer.vb">
+      <DependentUpon>FrmMstLevelBonusPengawas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstLevelBonusPengawas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Main Supplier\FrmMstSupplierMainShow.Designer.vb">
+      <DependentUpon>FrmMstSupplierMainShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Main Supplier\FrmMstSupplierMainShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Upah Bongkar\FrmMstTarifUpahBongkar.Designer.vb">
+      <DependentUpon>FrmMstTarifUpahBongkar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Upah Bongkar\FrmMstTarifUpahBongkar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Upah Bongkar\FrmMstUpahBongkarShow.Designer.vb">
+      <DependentUpon>FrmMstUpahBongkarShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Upah Bongkar\FrmMstUpahBongkarShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Wilayah Divisi\FrmMstWilayahDivisi.Designer.vb">
+      <DependentUpon>FrmMstWilayahDivisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Wilayah Divisi\FrmMstWilayahDivisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanBahanBaku.Designer.vb">
+      <DependentUpon>FrmMonPenerimaanBahanBaku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanBahanBaku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\FrmMonBarangInventarisPancang.Designer.vb">
+      <DependentUpon>FrmMonBarangInventarisPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\FrmMonBarangInventarisPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\frmmonpembelianbarangcash\FrmMonPembelianBarangPancangCash.Designer.vb">
+      <DependentUpon>FrmMonPembelianBarangPancangCash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\frmmonpembelianbarangcash\FrmMonPembelianBarangPancangCash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\frmmonpembelianbarangcash\FrmTrnEditDataPembelianBarangPancangCash.Designer.vb">
+      <DependentUpon>FrmTrnEditDataPembelianBarangPancangCash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\frmmonpembelianbarangcash\FrmTrnEditDataPembelianBarangPancangCash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\report_\FrmRptFoto.Designer.vb">
+      <DependentUpon>FrmRptFoto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\report_\FrmRptFoto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\report_\FrmRptPembelianBarangCashPancang.Designer.vb">
+      <DependentUpon>FrmRptPembelianBarangCashPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\report_\FrmRptPembelianBarangCashPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\report_\FrmRptPembelianBarangCashPancangFromMon.Designer.vb">
+      <DependentUpon>FrmRptPembelianBarangCashPancangFromMon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Inventaris\report_\FrmRptPembelianBarangCashPancangFromMon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanKBKg.Designer.vb">
+      <DependentUpon>FrmMonPenerimaanKBKg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanKBKg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Cetak Label Petani\FrmTrnCetakLabelPetani.Designer.vb">
+      <DependentUpon>FrmTrnCetakLabelPetani.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Cetak Label Petani\FrmTrnCetakLabelPetani.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\frmtrnapprovalpengeluaranbarang\FrmTrnApprovalPengeluaranBarang.Designer.vb">
+      <DependentUpon>FrmTrnApprovalPengeluaranBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\frmtrnapprovalpengeluaranbarang\FrmTrnApprovalPengeluaranBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\frmtrnapprovalpengeluaranbarang\FrmTrnApprovalPengeluaranBarangDialog.Designer.vb">
+      <DependentUpon>FrmTrnApprovalPengeluaranBarangDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\frmtrnapprovalpengeluaranbarang\FrmTrnApprovalPengeluaranBarangDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\FrmTrnBarangKeluar.Designer.vb">
+      <DependentUpon>FrmTrnBarangKeluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\FrmTrnBarangKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\frmtrnbarangmasuk\FrmTrnBarangMasuk.Designer.vb">
+      <DependentUpon>FrmTrnBarangMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\frmtrnbarangmasuk\FrmTrnBarangMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\frmtrnbarangmasuk\FrmTrnRestoreBarangMasuk.Designer.vb">
+      <DependentUpon>FrmTrnRestoreBarangMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\frmtrnbarangmasuk\FrmTrnRestoreBarangMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\FrmTrnTerimaNotaDiPabrik.Designer.vb">
+      <DependentUpon>FrmTrnTerimaNotaDiPabrik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Inventaris\FrmTrnTerimaNotaDiPabrik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnInputTripShow.Designer.vb">
+      <DependentUpon>FrmTrnInputTripShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnInputTripShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancang.designer.vb">
+      <DependentUpon>FrmTrnAbsensiPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangLembur.Designer.vb">
+      <DependentUpon>FrmTrnAbsensiPancangLembur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangLembur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangLemburApproval.Designer.vb">
+      <DependentUpon>FrmTrnAbsensiPancangLemburApproval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangLemburApproval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlUserOneLoginRequest.Designer.vb">
+      <DependentUpon>FrmUtlUserOneLoginRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlUserOneLoginRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmDashboard.Designer.vb">
+      <DependentUpon>FrmDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmMain.Designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlAksesPancang.Designer.vb">
+      <DependentUpon>FrmUtlAksesPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlAksesPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlMenu.Designer.vb">
+      <DependentUpon>FrmUtlMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlMenuAkses.Designer.vb">
+      <DependentUpon>FrmUtlMenuAkses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlMenuAkses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlMenuVisibel.Designer.vb">
+      <DependentUpon>FrmUtlMenuVisibel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlMenuVisibel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlRole.Designer.vb">
+      <DependentUpon>FrmUtlRole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlRole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlUser.Designer.vb">
+      <DependentUpon>FrmUtlUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\ClsComboBoxHelper.vb" />
+    <Compile Include="Library\ClsFlexGrid.vb" />
+    <Compile Include="Library\ClsFormControlHelper.vb" />
+    <Compile Include="Library\ClsGeneral.vb" />
+    <Compile Include="Library\ClsHargaBahanBakuService.vb" />
+    <Compile Include="Library\ClsSecurityHelper.vb" />
+    <Compile Include="Library\ClsSession.vb" />
+    <Compile Include="Library\ClsTerbilang.vb" />
+    <Compile Include="Library\ClsDatabaseConnection.vb" />
+    <Compile Include="Library\ClsFunction.vb" />
+    <Compile Include="Library\ClsDrawingHelper.vb" />
+    <Compile Include="Library\ClsRelasiLoyal.vb" />
+    <Compile Include="Library\ClsVariable.vb" />
+    <Compile Include="Library\ClsWebDAV.vb" />
+    <Compile Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancangDlgItem.Designer.vb">
+      <DependentUpon>FrmTrnPembelianNonPancangDlgItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancangDlgItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmDlgItemAvailable.Designer.vb">
+      <DependentUpon>FrmDlgItemAvailable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmDlgItemAvailable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmMstSupplierPindahDokumen.Designer.vb">
+      <DependentUpon>FrmMstSupplierPindahDokumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmMstSupplierPindahDokumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Supplier\FrmMstSupplierShow.Designer.vb">
+      <DependentUpon>FrmMstSupplierShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Supplier\FrmMstSupplierShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Supplier\FrmMstSupplier.Designer.vb">
+      <DependentUpon>FrmMstSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Supplier\FrmMstSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penerimaan Pabrik\FrmMonInformasiPenerimaanBahanBaku.Designer.vb">
+      <DependentUpon>FrmMonInformasiPenerimaanBahanBaku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penerimaan Pabrik\FrmMonInformasiPenerimaanBahanBaku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Nota\FrmMonNotaTimbangPancang.Designer.vb">
+      <DependentUpon>FrmMonNotaTimbangPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Nota\FrmMonNotaTimbangPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Nota\FrmMonNotaTimbangPancangEdit.Designer.vb">
+      <DependentUpon>FrmMonNotaTimbangPancangEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Nota\FrmMonNotaTimbangPancangEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanPabrikKelapaBPI.Designer.vb">
+      <DependentUpon>FrmMonPenerimaanPabrikKelapaBPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanPabrikKelapaBPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancang.Designer.vb">
+      <DependentUpon>FrmTrnPembelianNonPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancangShow.Designer.vb">
+      <DependentUpon>FrmTrnPembelianNonPancangShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancangShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkarFindPECU.Designer.vb">
+      <DependentUpon>FrmTrnPenjualanNonDataBongkarFindPECU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkarFindPECU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanParigi.Designer.vb">
+      <DependentUpon>FrmTrnPenjualanParigi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanParigi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRestoreFakturPabrik.Designer.vb">
+      <DependentUpon>FrmTrnPenjualanRestoreFakturPabrik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRestoreFakturPabrik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkar.Designer.vb">
+      <DependentUpon>FrmTrnPenjualanNonDataBongkar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRestore.Designer.vb">
+      <DependentUpon>FrmTrnPenjualanRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkarShow.Designer.vb">
+      <DependentUpon>FrmTrnPenjualanNonDataBongkarShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkarShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInputPECU.Designer.vb">
+      <DependentUpon>FrmTrnPengajuanPenerimaanNotaInputPECU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInputPECU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalTransitBPI.Designer.vb">
+      <DependentUpon>FrmTrnTambangKapalTransitBPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalTransitBPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\MsgBoxCustom.Designer.vb">
+      <DependentUpon>MsgBoxCustom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\MsgBoxCustom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\ILookupDialog.vb" />
+    <Compile Include="Library\ClsSecretObfuscation.vb" />
+    <Compile Include="Library\Modul_Config.vb" />
+    <Compile Include="Library\OneLoginService.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\dsangkutanbuahkelapa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsangkutanbuahkelapa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\dsangkutanbuahkelapa.vb">
+      <DependentUpon>dsangkutanbuahkelapa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSFeeLahanPancang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFeeLahanPancang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSFeeLahanPancang.vb">
+      <DependentUpon>DSFeeLahanPancang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\dsharga.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsharga.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\dsharga.vb">
+      <DependentUpon>dsharga.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSInvoicePembayaranKelapa.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSInvoicePembayaranKelapa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSInvoicePembayaranKelapa.vb">
+      <DependentUpon>DSInvoicePembayaranKelapa.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSMonLaporanKelapaBPI.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMonLaporanKelapaBPI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSMonLaporanKelapaBPI.vb">
+      <DependentUpon>DSMonLaporanKelapaBPI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSMonRekening.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMonRekening.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSMonRekening.vb">
+      <DependentUpon>DSMonRekening.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DsMonRkpKapalPcg.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsMonRkpKapalPcg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DsMonRkpKapalPcg.vb">
+      <DependentUpon>DsMonRkpKapalPcg.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSPembayaranKT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSPembayaranKT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSPembayaranKT.vb">
+      <DependentUpon>DSPembayaranKT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSQRCode.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSQRCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSQRCode.vb">
+      <DependentUpon>DSQRCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSQRCodeNew.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSQRCodeNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSQRCodeNew.vb">
+      <DependentUpon>DSQRCodeNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSRekapDataPetani.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRekapDataPetani.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSRekapDataPetani.vb">
+      <DependentUpon>DSRekapDataPetani.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSRekapPengajuanBPI.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRekapPengajuanBPI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSRekapPengajuanBPI.vb">
+      <DependentUpon>DSRekapPengajuanBPI.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DsRequestPenukaranPoint.Designer.vb">
+      <DependentUpon>DsRequestPenukaranPoint.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reports\Dataset\DsRequestPenukaranPoint.vb">
+      <DependentUpon>DsRequestPenukaranPoint.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSTokoPancang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSTokoPancang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Dataset\DSTokoPancang.vb">
+      <DependentUpon>DSTokoPancang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Harga Nego\FrmApprovedHargaNego.designer.vb">
+      <DependentUpon>FrmApprovedHargaNego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Harga Nego\FrmApprovedHargaNego.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Approval\Komisi_\FrmApprovalKomisi.Designer.vb">
+      <DependentUpon>FrmApprovalKomisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Komisi_\FrmApprovalKomisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Approval\Penerimaan Nota\FrmApprovalPenerimaanKelapa.Designer.vb">
+      <DependentUpon>FrmApprovalPenerimaanKelapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Penerimaan Nota\FrmApprovalPenerimaanKelapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Approval\Tambang Kapal_\FrmApprovalTambangKapal.Designer.vb">
+      <DependentUpon>FrmApprovalTambangKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Tambang Kapal_\FrmApprovalTambangKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Approval\Upah Bongkar_\FrmApprovalUpahBongkar.Designer.vb">
+      <DependentUpon>FrmApprovalUpahBongkar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Upah Bongkar_\FrmApprovalUpahBongkar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Approval\FrmMstApprove.Designer.vb">
+      <DependentUpon>FrmMstApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Approval\FrmMstApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Pengepul\FrmMstHargaBeliBahanBakuPengepul.Designer.vb">
+      <DependentUpon>FrmMstHargaBeliBahanBakuPengepul.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Pengepul\FrmMstHargaBeliBahanBakuPengepul.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Main Supplier\FrmMstSupplierMain.Designer.vb">
+      <DependentUpon>FrmMstSupplierMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Main Supplier\FrmMstSupplierMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Supplier\FrmMonSupplierApproval.Designer.vb">
+      <DependentUpon>FrmMonSupplierApproval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Supplier\FrmMonSupplierApproval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Personil Pancang\FrmMstHariLiburNasional.Designer.vb">
+      <DependentUpon>FrmMstHariLiburNasional.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Personil Pancang\FrmMstHariLiburNasional.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Personil Pancang\FrmMstPersonilPancangNew.Designer.vb">
+      <DependentUpon>FrmMstPersonilPancangNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Personil Pancang\FrmMstPersonilPancangNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Personil Pancang\FrmMstPersonilPancangNewList.Designer.vb">
+      <DependentUpon>FrmMstPersonilPancangNewList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Personil Pancang\FrmMstPersonilPancangNewList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatKeSupplier.Designer.vb">
+      <DependentUpon>FrmMstUpahBongkarMuatKeSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatKeSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatPCGSub.Designer.vb">
+      <DependentUpon>FrmMstUpahBongkarMuatPCGSub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatPCGSub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Upah Bongkar\FrmMstUpahBongkarKontainer.Designer.vb">
+      <DependentUpon>FrmMstUpahBongkarKontainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Upah Bongkar\FrmMstUpahBongkarKontainer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBaku.Designer.vb">
+      <DependentUpon>FrmMstHargaBeliBahanBaku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBaku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBakuShow.Designer.vb">
+      <DependentUpon>FrmMstHargaBeliBahanBakuShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBakuShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang\FrmMstTarifTambangKapal.Designer.vb">
+      <DependentUpon>FrmMstTarifTambangKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang\FrmMstTarifTambangKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang\FrmMstTarifTambangKapalDialog.Designer.vb">
+      <DependentUpon>FrmMstTarifTambangKapalDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang\FrmMstTarifTambangKapalDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBakuStatusAktif.Designer.vb">
+      <DependentUpon>FrmMstHargaBeliBahanBakuStatusAktif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBakuStatusAktif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Kontraktor\FrmMstKontraktor.Designer.vb">
+      <DependentUpon>FrmMstKontraktor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kontraktor\FrmMstKontraktor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Kontraktor\FrmMstKontraktorSub.Designer.vb">
+      <DependentUpon>FrmMstKontraktorSub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kontraktor\FrmMstKontraktorSub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKapalPelangsir.Designer.vb">
+      <DependentUpon>FrmMstKapalPelangsir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKapalPelangsir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKapalPelangsirShow.Designer.vb">
+      <DependentUpon>FrmMstKapalPelangsirShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKapalPelangsirShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstHargaPoint.designer.vb">
+      <DependentUpon>FrmMstHargaPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstHargaPoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstKlasifikasiPoint.designer.vb">
+      <DependentUpon>FrmMstKlasifikasiPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstKlasifikasiPoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstRelasiCekDoc.Designer.vb">
+      <DependentUpon>FrmMstRelasiCekDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstRelasiCekDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstItem.designer.vb">
+      <DependentUpon>FrmMstItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstTokoNew.designer.vb">
+      <DependentUpon>FrmMstTokoNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Loyalty\FrmMstTokoNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonLemburKaryawan.Designer.vb">
+      <DependentUpon>FrmMonLemburKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonLemburKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonLemburPersonilPCG.designer.vb">
+      <DependentUpon>FrmMonLemburPersonilPCG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonLemburPersonilPCG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonLemburPersonilPCGFind.Designer.vb">
+      <DependentUpon>FrmMonLemburPersonilPCGFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonLemburPersonilPCGFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonPenggeseranAbsensiPancang.designer.vb">
+      <DependentUpon>FrmMonPenggeseranAbsensiPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonPenggeseranAbsensiPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonUangMakanPCG.Designer.vb">
+      <DependentUpon>FrmMonUangMakanPCG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonUangMakanPCG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Akumulasi DPP Relasi BPI\FrmMonAkumulasiDPPRelasiBPI.Designer.vb">
+      <DependentUpon>FrmMonAkumulasiDPPRelasiBPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Akumulasi DPP Relasi BPI\FrmMonAkumulasiDPPRelasiBPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNota.Designer.vb">
+      <DependentUpon>FrmMonPengajuanPenerimaanNota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNotaProgres.Designer.vb">
+      <DependentUpon>FrmMonPengajuanPenerimaanNotaProgres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNotaProgres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNotaRekap.Designer.vb">
+      <DependentUpon>FrmMonPengajuanPenerimaanNotaRekap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNotaRekap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Harga\Beli Bahan Baku\FrmMonApprovalHarga.Designer.vb">
+      <DependentUpon>FrmMonApprovalHarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Harga\Beli Bahan Baku\FrmMonApprovalHarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\CekNotaSebelumKalkulasi\FrmMonCekNotaSebelumKalkulasi.Designer.vb">
+      <DependentUpon>FrmMonCekNotaSebelumKalkulasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\CekNotaSebelumKalkulasi\FrmMonCekNotaSebelumKalkulasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmFotoSlide.Designer.vb">
+      <DependentUpon>FrmFotoSlide.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmFotoSlide.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\KapalPelangsir\FrmMonCheckinPelangsir.Designer.vb">
+      <DependentUpon>FrmMonCheckinPelangsir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\KapalPelangsir\FrmMonCheckinPelangsir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekening\FrmMonCustomerCard.Designer.vb">
+      <DependentUpon>FrmMonCustomerCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekening\FrmMonCustomerCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonDokingKapal.Designer.vb">
+      <DependentUpon>FrmMonDokingKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonDokingKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Detail Timbang Kelapa Pancang\FrmMonDtlTimbangKelapaPCG.Designer.vb">
+      <DependentUpon>FrmMonDtlTimbangKelapaPCG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Detail Timbang Kelapa Pancang\FrmMonDtlTimbangKelapaPCG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Harga\Nego\FrmMonApproveHargaNego.designer.vb">
+      <DependentUpon>FrmMonApproveHargaNego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Harga\Nego\FrmMonApproveHargaNego.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Harga\Beli Bahan Baku\FrmMonHargaPancang.Designer.vb">
+      <DependentUpon>FrmMonHargaPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Harga\Beli Bahan Baku\FrmMonHargaPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalSusust.Designer.vb">
+      <DependentUpon>FrmMonKapalSusust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalSusust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Loyalty\FrmMonLoyaltyCashBackRelasiNew.Designer.vb">
+      <DependentUpon>FrmMonLoyaltyCashBackRelasiNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Loyalty\FrmMonLoyaltyCashBackRelasiNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Loyalty\FrmMonPengajuanPoin.designer.vb">
+      <DependentUpon>FrmMonPengajuanPoin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Loyalty\FrmMonPengajuanPoin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Loyalty\FrmMonPengajuanPoinNew.Designer.vb">
+      <DependentUpon>FrmMonPengajuanPoinNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Loyalty\FrmMonPengajuanPoinNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonProgresNotaPancang.Designer.vb">
+      <DependentUpon>FrmMonProgresNotaPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonProgresNotaPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\WO Pancang\FrmMonWoPancang.Designer.vb">
+      <DependentUpon>FrmMonWoPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\WO Pancang\FrmMonWoPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\WO Pancang\FrmMonWoPancangDtl.Designer.vb">
+      <DependentUpon>FrmMonWoPancangDtl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\WO Pancang\FrmMonWoPancangDtl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalRekap.Designer.vb">
+      <DependentUpon>FrmMonKapalRekap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalRekap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\KapalPelangsir\FrmMonKapalPelangsir.Designer.vb">
+      <DependentUpon>FrmMonKapalPelangsir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\KapalPelangsir\FrmMonKapalPelangsir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalSelesaiPancang.Designer.vb">
+      <DependentUpon>FrmMonKapalSelesaiPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalSelesaiPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Loyalty\FrmMonLoyaltyCashBack.Designer.vb">
+      <DependentUpon>FrmMonLoyaltyCashBack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Loyalty\FrmMonLoyaltyCashBack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Premi\FrmMonRelasiTdkLoyal.Designer.vb">
+      <DependentUpon>FrmMonRelasiTdkLoyal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Premi\FrmMonRelasiTdkLoyal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonPemeriksaanKapal.Designer.vb">
+      <DependentUpon>FrmMonPemeriksaanKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonPemeriksaanKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalRekapPsgRsup.Designer.vb">
+      <DependentUpon>FrmMonKapalRekapPsgRsup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalRekapPsgRsup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekap Komisi\FrmMonRekapPengajuanKomisi.Designer.vb">
+      <DependentUpon>FrmMonRekapPengajuanKomisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekap Komisi\FrmMonRekapPengajuanKomisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Pemakaian Solar\FrmMonPemakaianSolar.Designer.vb">
+      <DependentUpon>FrmMonPemakaianSolar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Pemakaian Solar\FrmMonPemakaianSolar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Pembayaran Supplier Ke Toke\FrmMonPembayaranSupplierKeToke.Designer.vb">
+      <DependentUpon>FrmMonPembayaranSupplierKeToke.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Pembayaran Supplier Ke Toke\FrmMonPembayaranSupplierKeToke.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penjualan\FrmMonProgressPembuatanPenjualan.Designer.vb">
+      <DependentUpon>FrmMonProgressPembuatanPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penjualan\FrmMonProgressPembuatanPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penjualan\FrmMonRekapPengajuanPembuatanPenjualan.Designer.vb">
+      <DependentUpon>FrmMonRekapPengajuanPembuatanPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Penjualan\FrmMonRekapPengajuanPembuatanPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonPointKapalRanking.Designer.vb">
+      <DependentUpon>FrmMonPointKapalRanking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Kapal\FrmMonPointKapalRanking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmFotoView.Designer.vb">
+      <DependentUpon>FrmFotoView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmFotoView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekening\FrmMonPercentagePancang.Designer.vb">
+      <DependentUpon>FrmMonPercentagePancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekening\FrmMonPercentagePancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Supplier\FrmMonSupplier.Designer.vb">
+      <DependentUpon>FrmMonSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Supplier\FrmMonSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Tambang Kapal\FrmMonProgressTambangKapal.Designer.vb">
+      <DependentUpon>FrmMonProgressTambangKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Tambang Kapal\FrmMonProgressTambangKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Tambang Kapal\FrmMonRekapPengajuanTambangKapal.Designer.vb">
+      <DependentUpon>FrmMonRekapPengajuanTambangKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Kapal\Tambang Kapal\FrmMonRekapPengajuanTambangKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekap Upah Bongkar\FrmMonRekapPengajuanUpahBongkar.Designer.vb">
+      <DependentUpon>FrmMonRekapPengajuanUpahBongkar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekap Upah Bongkar\FrmMonRekapPengajuanUpahBongkar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Verifikasi Timbang Pancang\FrmMonVerifikasiTimbangPCG.Designer.vb">
+      <DependentUpon>FrmMonVerifikasiTimbangPCG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Verifikasi Timbang Pancang\FrmMonVerifikasiTimbangPCG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonUangMakanPCGDataPancangManual.Designer.vb">
+      <DependentUpon>FrmMonUangMakanPCGDataPancangManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmMonUangMakanPCGDataPancangManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangManual.designer.vb">
+      <DependentUpon>FrmTrnAbsensiPancangManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmTrnPergeseranPancang.Designer.vb">
+      <DependentUpon>FrmTrnPergeseranPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Absensi\FrmTrnPergeseranPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInput.Designer.vb">
+      <DependentUpon>FrmTrnPengajuanPenerimaanNotaInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNota.Designer.vb">
+      <DependentUpon>FrmTrnPengajuanPenerimaanNota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInputFindNota.Designer.vb">
+      <DependentUpon>FrmTrnPengajuanPenerimaanNotaInputFindNota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInputFindNota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapalApproval.Designer.vb">
+      <DependentUpon>FrmTrnDokingKapalApproval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapalApproval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapal.Designer.vb">
+      <DependentUpon>FrmTrnDokingKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapalPerencanaan.Designer.vb">
+      <DependentUpon>FrmTrnDokingKapalPerencanaan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapalPerencanaan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapalRealisasi.Designer.vb">
+      <DependentUpon>FrmTrnDokingKapalRealisasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapalRealisasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapalRestore.Designer.vb">
+      <DependentUpon>FrmTrnDokingKapalRestore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnDokingKapalRestore.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnApproval1DanInputBarangPengajuanWoPancang.Designer.vb">
+      <DependentUpon>FrmTrnApproval1DanInputBarangPengajuanWoPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnApproval1DanInputBarangPengajuanWoPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnApproval1DanInputBarangPengajuanWoPancangFind.Designer.vb">
+      <DependentUpon>FrmTrnApproval1DanInputBarangPengajuanWoPancangFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnApproval1DanInputBarangPengajuanWoPancangFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnPembayaranWoPancang.Designer.vb">
+      <DependentUpon>FrmTrnPembayaranWoPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnPembayaranWoPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnUploadBaWoPancang.Designer.vb">
+      <DependentUpon>FrmTrnUploadBaWoPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnUploadBaWoPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnUploadInspectionWoPancang.Designer.vb">
+      <DependentUpon>FrmTrnUploadInspectionWoPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\WO Pancang\FrmTrnUploadInspectionWoPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Harga Nego\FrmInputHargaNego.Designer.vb">
+      <DependentUpon>FrmInputHargaNego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Harga Nego\FrmInputHargaNego.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Komisi\FrmTrnKomisi.Designer.vb">
+      <DependentUpon>FrmTrnKomisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Komisi\FrmTrnKomisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Komisi\FrmTrnKomisiFind.Designer.vb">
+      <DependentUpon>FrmTrnKomisiFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Komisi\FrmTrnKomisiFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRSUPDanPSG.Designer.vb">
+      <DependentUpon>FrmTrnPenjualanRSUPDanPSG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRSUPDanPSG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualan.Designer.vb">
+      <DependentUpon>FrmTrnPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRSUPDanPSGFindKapal.Designer.vb">
+      <DependentUpon>FrmTrnPenjualanRSUPDanPSGFindKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRSUPDanPSGFindKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnPointKapal.designer.vb">
+      <DependentUpon>FrmTrnPointKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnPointKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnPointKapalFind.Designer.vb">
+      <DependentUpon>FrmTrnPointKapalFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnPointKapalFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Approval\Loyalty\FrmApprovalTokoPancang.designer.vb">
+      <DependentUpon>FrmApprovalTokoPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Loyalty\FrmApprovalTokoPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmPhotoUser.Designer.vb">
+      <DependentUpon>FrmPhotoUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmPhotoUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnBuktiTrfPengajuanPoin.designer.vb">
+      <DependentUpon>FrmTrnBuktiTrfPengajuanPoin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnBuktiTrfPengajuanPoin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnBuktiTrfPengajuanPoinFind.designer.vb">
+      <DependentUpon>FrmTrnBuktiTrfPengajuanPoinFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnBuktiTrfPengajuanPoinFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinLoyaltyFindNew.Designer.vb">
+      <DependentUpon>FrmTrnPoinLoyaltyFindNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinLoyaltyFindNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinPengajuan.Designer.vb">
+      <DependentUpon>FrmTrnPoinPengajuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinPengajuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinPengajuanFind.Designer.vb">
+      <DependentUpon>FrmTrnPoinPengajuanFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinPengajuanFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnTukarPoinNew.Designer.vb">
+      <DependentUpon>FrmTrnTukarPoinNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnTukarPoinNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasi.Designer.vb">
+      <DependentUpon>FrmTrnPotonganRelasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasiFind.Designer.vb">
+      <DependentUpon>FrmTrnPotonganRelasiFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasiFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasiVoucher.Designer.vb">
+      <DependentUpon>FrmTrnPotonganRelasiVoucher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasiVoucher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinLoyalty.designer.vb">
+      <DependentUpon>FrmTrnPoinLoyalty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinLoyalty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinLoyaltyFind.designer.vb">
+      <DependentUpon>FrmTrnPoinLoyaltyFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnPoinLoyaltyFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnTukarPoin.Designer.vb">
+      <DependentUpon>FrmTrnTukarPoin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Loyalty\FrmTrnTukarPoin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Deklarasi Harian Angkutan Buah Kelapa\FrmTrnPremiAsuransi.Designer.vb">
+      <DependentUpon>FrmTrnPremiAsuransi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Deklarasi Harian Angkutan Buah Kelapa\FrmTrnPremiAsuransi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Deklarasi Harian Angkutan Buah Kelapa\FrmTrnPremiAsuransiFind.Designer.vb">
+      <DependentUpon>FrmTrnPremiAsuransiFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Deklarasi Harian Angkutan Buah Kelapa\FrmTrnPremiAsuransiFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPI.Designer.vb">
+      <DependentUpon>FrmTrnTambangKapalBPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPIFind.Designer.vb">
+      <DependentUpon>FrmTrnTambangKapalBPIFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPIFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPIFindKapal.Designer.vb">
+      <DependentUpon>FrmTrnTambangKapalBPIFindKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPIFindKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Approval\Loyalty\FrmApprovelUserToko.Designer.vb">
+      <DependentUpon>FrmApprovelUserToko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Loyalty\FrmApprovelUserToko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Upah Bongkar\FrmTrnUpahBongkarInput.Designer.vb">
+      <DependentUpon>FrmTrnUpahBongkarInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Upah Bongkar\FrmTrnUpahBongkarInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Upah Bongkar\FrmTrnUpahBongkar.Designer.vb">
+      <DependentUpon>FrmTrnUpahBongkar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Upah Bongkar\FrmTrnUpahBongkar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmKeteranganDelete.Designer.vb">
+      <DependentUpon>FrmKeteranganDelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmKeteranganDelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnUbahTujuan.Designer.vb">
+      <DependentUpon>FrmTrnUbahTujuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnUbahTujuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Komisi\FrmMstFee.Designer.vb">
+      <DependentUpon>FrmMstFee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Komisi\FrmMstFee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKaptenKapal.Designer.vb">
+      <DependentUpon>FrmMstKaptenKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKaptenKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstPremiPengawasdanIPFind.Designer.vb">
+      <DependentUpon>FrmMstPremiPengawasdanIPFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstPremiPengawasdanIPFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstLevelBonus.Designer.vb">
+      <DependentUpon>FrmMstLevelBonus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstLevelBonus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Approval\Rekening Supplier\FrmApproveRekening.Designer.vb">
+      <DependentUpon>FrmApproveRekening.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Approval\Rekening Supplier\FrmApproveRekening.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Rekening\FrmMstRekening.Designer.vb">
+      <DependentUpon>FrmMstRekening.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Supplier\Rekening\FrmMstRekening.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuat.Designer.vb">
+      <DependentUpon>FrmMstUpahBongkarMuat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatP1.Designer.vb">
+      <DependentUpon>FrmMstUpahBongkarMuatP1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatP1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatShow.Designer.vb">
+      <DependentUpon>FrmMstUpahBongkarMuatShow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatShow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatShowP1.Designer.vb">
+      <DependentUpon>FrmMstUpahBongkarMuatShowP1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatShowP1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstPremiPengawasandIP.Designer.vb">
+      <DependentUpon>FrmMstPremiPengawasandIP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Premi\FrmMstPremiPengawasandIP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Premi\.Designer.vb">
+      <DependentUpon>FrmMonRelasiLoyal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Premi\FrmMonRelasiLoyal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Nota\FrmMonKapalCheckIndanOTW.Designer.vb">
+      <DependentUpon>FrmMonKapalCheckIndanOTW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Nota\FrmMonKapalCheckIndanOTW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Dialog\FrmDlgSupplier.Designer.vb">
+      <DependentUpon>FrmDlgSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Dialog\FrmDlgSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Laporan Muat Kelapa\FrmLaporanMuatKelapa.designer.vb">
+      <DependentUpon>FrmLaporanMuatKelapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Laporan Muat Kelapa\FrmLaporanMuatKelapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Nota\FrmMonPrintNotaALL.Designer.vb">
+      <DependentUpon>FrmMonPrintNotaALL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Nota\Nota\FrmMonPrintNotaALL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekening\FrmMonRekeningRelasiPcgApprove.Designer.vb">
+      <DependentUpon>FrmMonRekeningRelasiPcgApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekening\FrmMonRekeningRelasiPcgApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekening\FrmMonRekeningRelasiPcg.Designer.vb">
+      <DependentUpon>FrmMonRekeningRelasiPcg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Monitoring\Rekening\FrmMonRekeningRelasiPcg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Premi\FrmPremiInspektor.Designer.vb">
+      <DependentUpon>FrmPremiInspektor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Premi\FrmPremiInspektor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnUangMakanPersonilPancang.designer.vb">
+      <DependentUpon>FrmTrnUangMakanPersonilPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Personil Pancang\FrmTrnUangMakanPersonilPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Invoice Pembayaran Kelapa\FrmTrnInvoicePembayaranKelapa.designer.vb">
+      <DependentUpon>FrmTrnInvoicePembayaranKelapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Invoice Pembayaran Kelapa\FrmTrnInvoicePembayaranKelapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Premi\FrmTrnPremiPengawas.designer.vb">
+      <DependentUpon>FrmTrnPremiPengawas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Premi\FrmTrnPremiPengawas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnUpdateTripKapal.Designer.vb">
+      <DependentUpon>FrmTrnUpdateTripKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnUpdateTripKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKapal.Designer.vb">
+      <DependentUpon>FrmMstKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Master\Kapal\FrmMstKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmFotoNota.Designer.vb">
+      <DependentUpon>FrmFotoNota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmFotoNota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnInputTrip.Designer.vb">
+      <DependentUpon>FrmTrnInputTrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Transaction\Kapal\FrmTrnInputTrip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlUpdateVersion.Designer.vb">
+      <DependentUpon>FrmUtlUpdateVersion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form\Utility\FrmUtlUpdateVersion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Library\Modul_RMP.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\Form\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmFotoRekening.designer.vb">
+      <DependentUpon>FrmFotoRekening.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmFotoRekening.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptAngkutanBuahKapal.Designer.vb">
+      <DependentUpon>FrmRptAngkutanBuahKapal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptAngkutanBuahKapal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptAngkutanBuahKapalInvoice.Designer.vb">
+      <DependentUpon>FrmRptAngkutanBuahKapalInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptAngkutanBuahKapalInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptInvoicePembayaranKelapa.designer.vb">
+      <DependentUpon>FrmRptInvoicePembayaranKelapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptInvoicePembayaranKelapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptKontrolPembayaranKelapaPancang.Designer.vb">
+      <DependentUpon>FrmRptKontrolPembayaranKelapaPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptKontrolPembayaranKelapaPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptMonRekeningRelasi.Designer.vb">
+      <DependentUpon>FrmRptMonRekeningRelasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptMonRekeningRelasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptMonRekeningRelasiPancang.Designer.vb">
+      <DependentUpon>FrmRptMonRekeningRelasiPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptMonRekeningRelasiPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptPembayaranUpahBongkarAll.designer.vb">
+      <DependentUpon>FrmRptPembayaranUpahBongkarAll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptPembayaranUpahBongkarAll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptPembayaranUpahBongkarMuat.designer.vb">
+      <DependentUpon>FrmRptPembayaranUpahBongkarMuat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptPembayaranUpahBongkarMuat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptQRbarcode.designer.vb">
+      <DependentUpon>FrmRptQRbarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptQRbarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptRekapDataPetaniPembayaranKB.designer.vb">
+      <DependentUpon>FrmRptRekapDataPetaniPembayaranKB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptRekapDataPetaniPembayaranKB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptRekapDataPetaniPembayaranUBM.Designer.vb">
+      <DependentUpon>FrmRptRekapDataPetaniPembayaranUBM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptRekapDataPetaniPembayaranUBM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptRencanaPenerimaanKelapa.Designer.vb">
+      <DependentUpon>FrmRptRencanaPenerimaanKelapa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptRencanaPenerimaanKelapa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptUangMakanPCG.Designer.vb">
+      <DependentUpon>FrmRptUangMakanPCG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptUangMakanPCG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptViewFilePdf_.Designer.vb">
+      <DependentUpon>FrmRptViewFilePdf_.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptViewFilePdf_.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptViewFoto.Designer.vb">
+      <DependentUpon>FrmRptViewFoto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptViewFoto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\LoyaltyPoin\FrmRptPembayaranLoyalty.Designer.vb">
+      <DependentUpon>FrmRptPembayaranLoyalty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\LoyaltyPoin\FrmRptPembayaranLoyalty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\LoyaltyPoin\FrmRptRequestPenukaranPoint.Designer.vb">
+      <DependentUpon>FrmRptRequestPenukaranPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\LoyaltyPoin\FrmRptRequestPenukaranPoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptTest.Designer.vb">
+      <DependentUpon>FrmRptTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptUangMakanPancang.designer.vb">
+      <DependentUpon>FrmRptUangMakanPancang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Form\FrmRptUangMakanPancang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Dataset\RMPAppDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RMPAppDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form\Approval\Harga Nego\FrmApprovedHargaNego.resx">
+      <DependentUpon>FrmApprovedHargaNego.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Approval\Komisi_\FrmApprovalKomisi.resx">
+      <DependentUpon>FrmApprovalKomisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Approval\Penerimaan Nota\FrmApprovalPenerimaanKelapa.resx">
+      <DependentUpon>FrmApprovalPenerimaanKelapa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Approval\Tambang Kapal_\FrmApprovalTambangKapal.resx">
+      <DependentUpon>FrmApprovalTambangKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Approval\Upah Bongkar_\FrmApprovalUpahBongkar.resx">
+      <DependentUpon>FrmApprovalUpahBongkar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancangDlgItem.resx">
+      <DependentUpon>FrmTrnPembelianNonPancangDlgItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmDlgItemAvailable.resx">
+      <DependentUpon>FrmDlgItemAvailable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Approval\FrmMstApprove.resx">
+      <DependentUpon>FrmMstApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Harga\Harga Bahan Baku KG\FrmMstHargaBahanBakuKg.resx">
+      <DependentUpon>FrmMstHargaBahanBakuKg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Harga\Pengepul\FrmMstHargaBeliBahanBakuPengepul.resx">
+      <DependentUpon>FrmMstHargaBeliBahanBakuPengepul.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Harga\Harga Premi Asuransi\FrmMstHargaPremiAsuransi.resx">
+      <DependentUpon>FrmMstHargaPremiAsuransi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Inventaris\FrmMstInventarisMasuk.resx">
+      <DependentUpon>FrmMstInventarisMasuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Inventaris\FrmMstItemInventory.resx">
+      <DependentUpon>FrmMstItemInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Inventaris\FrmMstSatuanItem.resx">
+      <DependentUpon>FrmMstSatuanItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kapal\FrmMstKapalShow.resx">
+      <DependentUpon>FrmMstKapalShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Personil Pancang\FrmMstUangMakan.resx">
+      <DependentUpon>FrmMstUangMakan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Premi\FrmMstLevelBonusPengawas.resx">
+      <DependentUpon>FrmMstLevelBonusPengawas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Supplier\Main Supplier\FrmMstSupplierMain.resx">
+      <DependentUpon>FrmMstSupplierMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Supplier\Main Supplier\FrmMstSupplierMainShow.resx">
+      <DependentUpon>FrmMstSupplierMainShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Upah Bongkar\FrmMstUpahBongkarShow.resx">
+      <DependentUpon>FrmMstUpahBongkarShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Wilayah Divisi\FrmMstWilayahDivisi.resx">
+      <DependentUpon>FrmMstWilayahDivisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\FrmMonBarangInventarisPancang.resx">
+      <DependentUpon>FrmMonBarangInventarisPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\frmmonpembelianbarangcash\FrmMonPembelianBarangPancangCash.resx">
+      <DependentUpon>FrmMonPembelianBarangPancangCash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\frmmonpembelianbarangcash\FrmTrnEditDataPembelianBarangPancangCash.resx">
+      <DependentUpon>FrmTrnEditDataPembelianBarangPancangCash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\report\FrmRptFotoNotaPembelianBarangCash.rdlc" />
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\report\RptPembelianBarangPancangCash.rdlc" />
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\report\RptPembelianBarangPancangCash2.rdlc" />
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\report\RptPembelianBarangPancangCashPulsaToken.rdlc" />
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\report_\FrmRptFoto.resx">
+      <DependentUpon>FrmRptFoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\report_\FrmRptPembelianBarangCashPancang.resx">
+      <DependentUpon>FrmRptPembelianBarangCashPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Inventaris\report_\FrmRptPembelianBarangCashPancangFromMon.resx">
+      <DependentUpon>FrmRptPembelianBarangCashPancangFromMon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanKBKg.resx">
+      <DependentUpon>FrmMonPenerimaanKBKg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanBahanBaku.resx">
+      <DependentUpon>FrmMonPenerimaanBahanBaku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Supplier\FrmMonSupplierApproval.resx">
+      <DependentUpon>FrmMonSupplierApproval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Personil Pancang\FrmMstHariLiburNasional.resx">
+      <DependentUpon>FrmMstHariLiburNasional.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Personil Pancang\FrmMstPersonilPancangNew.resx">
+      <DependentUpon>FrmMstPersonilPancangNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Personil Pancang\FrmMstPersonilPancangNewList.resx">
+      <DependentUpon>FrmMstPersonilPancangNewList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatKeSupplier.resx">
+      <DependentUpon>FrmMstUpahBongkarMuatKeSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatPCGSub.resx">
+      <DependentUpon>FrmMstUpahBongkarMuatPCGSub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Upah Bongkar\FrmMstTarifUpahBongkar.resx">
+      <DependentUpon>FrmMstTarifUpahBongkar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Upah Bongkar\FrmMstUpahBongkarKontainer.resx">
+      <DependentUpon>FrmMstUpahBongkarKontainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBaku.resx">
+      <DependentUpon>FrmMstHargaBeliBahanBaku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBakuShow.resx">
+      <DependentUpon>FrmMstHargaBeliBahanBakuShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Tambang\FrmMstTarifTambangKapal.resx">
+      <DependentUpon>FrmMstTarifTambangKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Tambang\FrmMstTarifTambangKapalDialog.resx">
+      <DependentUpon>FrmMstTarifTambangKapalDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Harga\Harga Beli Bahan Baku\FrmMstHargaBeliBahanBakuStatusAktif.resx">
+      <DependentUpon>FrmMstHargaBeliBahanBakuStatusAktif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kontraktor\FrmMstKontraktor.resx">
+      <DependentUpon>FrmMstKontraktor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kontraktor\FrmMstKontraktorSub.resx">
+      <DependentUpon>FrmMstKontraktorSub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kapal\FrmMstKapalPelangsir.resx">
+      <DependentUpon>FrmMstKapalPelangsir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kapal\FrmMstKapalPelangsirShow.resx">
+      <DependentUpon>FrmMstKapalPelangsirShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Loyalty\FrmMstHargaPoint.resx">
+      <DependentUpon>FrmMstHargaPoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Loyalty\FrmMstKlasifikasiPoint.resx">
+      <DependentUpon>FrmMstKlasifikasiPoint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Loyalty\FrmMstRelasiCekDoc.resx">
+      <DependentUpon>FrmMstRelasiCekDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Loyalty\FrmMstItem.resx">
+      <DependentUpon>FrmMstItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Loyalty\FrmMstTokoNew.resx">
+      <DependentUpon>FrmMstTokoNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnInputTripShow.resx">
+      <DependentUpon>FrmTrnInputTripShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancang.resx">
+      <DependentUpon>FrmTrnAbsensiPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangLembur.resx">
+      <DependentUpon>FrmTrnAbsensiPancangLembur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangLemburApproval.resx">
+      <DependentUpon>FrmTrnAbsensiPancangLemburApproval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmMstSupplierPindahDokumen.resx">
+      <DependentUpon>FrmMstSupplierPindahDokumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Supplier\Supplier\FrmMstSupplierShow.resx">
+      <DependentUpon>FrmMstSupplierShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Supplier\Supplier\FrmMstSupplier.resx">
+      <DependentUpon>FrmMstSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Absensi\FrmMonLemburKaryawan.resx">
+      <DependentUpon>FrmMonLemburKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Absensi\FrmMonLemburPersonilPCG.resx">
+      <DependentUpon>FrmMonLemburPersonilPCG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Absensi\FrmMonLemburPersonilPCGFind.resx">
+      <DependentUpon>FrmMonLemburPersonilPCGFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Absensi\FrmMonPenggeseranAbsensiPancang.resx">
+      <DependentUpon>FrmMonPenggeseranAbsensiPancang.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Absensi\FrmMonUangMakanPCG.resx">
+      <DependentUpon>FrmMonUangMakanPCG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Akumulasi DPP Relasi BPI\FrmMonAkumulasiDPPRelasiBPI.resx">
+      <DependentUpon>FrmMonAkumulasiDPPRelasiBPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Nota\Nota\FrmMonNotaTimbangPancangEdit.resx">
+      <DependentUpon>FrmMonNotaTimbangPancangEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNota.resx">
+      <DependentUpon>FrmMonPengajuanPenerimaanNota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNotaProgres.resx">
+      <DependentUpon>FrmMonPengajuanPenerimaanNotaProgres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Nota\Pengajuan Penerimaan Nota\FrmMonPengajuanPenerimaanNotaRekap.resx">
+      <DependentUpon>FrmMonPengajuanPenerimaanNotaRekap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Harga\Beli Bahan Baku\FrmMonApprovalHarga.resx">
+      <DependentUpon>FrmMonApprovalHarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\CekNotaSebelumKalkulasi\FrmMonCekNotaSebelumKalkulasi.resx">
+      <DependentUpon>FrmMonCekNotaSebelumKalkulasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmFotoSlide.resx">
+      <DependentUpon>FrmFotoSlide.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\KapalPelangsir\FrmMonCheckinPelangsir.resx">
+      <DependentUpon>FrmMonCheckinPelangsir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Rekening\FrmMonCustomerCard.resx">
+      <DependentUpon>FrmMonCustomerCard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Kapal\FrmMonDokingKapal.resx">
+      <DependentUpon>FrmMonDokingKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Detail Timbang Kelapa Pancang\FrmMonDtlTimbangKelapaPCG.resx">
+      <DependentUpon>FrmMonDtlTimbangKelapaPCG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Harga\Nego\FrmMonApproveHargaNego.resx">
+      <DependentUpon>FrmMonApproveHargaNego.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Harga\Beli Bahan Baku\FrmMonHargaPancang.resx">
+      <DependentUpon>FrmMonHargaPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalSusust.resx">
+      <DependentUpon>FrmMonKapalSusust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Loyalty\FrmMonLoyaltyCashBackRelasiNew.resx">
+      <DependentUpon>FrmMonLoyaltyCashBackRelasiNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Loyalty\FrmMonPengajuanPoin.resx">
+      <DependentUpon>FrmMonPengajuanPoin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Loyalty\FrmMonPengajuanPoinNew.resx">
+      <DependentUpon>FrmMonPengajuanPoinNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Kapal\FrmMonProgresNotaPancang.resx">
+      <DependentUpon>FrmMonProgresNotaPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\WO Pancang\FrmMonWoPancang.resx">
+      <DependentUpon>FrmMonWoPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\WO Pancang\FrmMonWoPancangDtl.resx">
+      <DependentUpon>FrmMonWoPancangDtl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Penerimaan Pabrik\FrmMonInformasiPenerimaanBahanBaku.resx">
+      <DependentUpon>FrmMonInformasiPenerimaanBahanBaku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\KapalPelangsir\FrmMonKapalPelangsir.resx">
+      <DependentUpon>FrmMonKapalPelangsir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalRekap.resx">
+      <DependentUpon>FrmMonKapalRekap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalSelesaiPancang.resx">
+      <DependentUpon>FrmMonKapalSelesaiPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Kapal\FrmMonPemeriksaanKapal.resx">
+      <DependentUpon>FrmMonPemeriksaanKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Kapal\FrmMonKapalRekapPsgRsup.resx">
+      <DependentUpon>FrmMonKapalRekapPsgRsup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Loyalty\FrmMonLoyaltyCashBack.resx">
+      <DependentUpon>FrmMonLoyaltyCashBack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Premi\FrmMonRelasiTdkLoyal.resx">
+      <DependentUpon>FrmMonRelasiTdkLoyal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Rekap Komisi\FrmMonRekapPengajuanKomisi.resx">
+      <DependentUpon>FrmMonRekapPengajuanKomisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Nota\Nota\FrmMonNotaTimbangPancang.resx">
+      <DependentUpon>FrmMonNotaTimbangPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Pemakaian Solar\FrmMonPemakaianSolar.resx">
+      <DependentUpon>FrmMonPemakaianSolar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Pembayaran Supplier Ke Toke\FrmMonPembayaranSupplierKeToke.resx">
+      <DependentUpon>FrmMonPembayaranSupplierKeToke.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Penjualan\FrmMonProgressPembuatanPenjualan.resx">
+      <DependentUpon>FrmMonProgressPembuatanPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Penjualan\FrmMonRekapPengajuanPembuatanPenjualan.resx">
+      <DependentUpon>FrmMonRekapPengajuanPembuatanPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Penerimaan Pabrik\FrmMonPenerimaanPabrikKelapaBPI.resx">
+      <DependentUpon>FrmMonPenerimaanPabrikKelapaBPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Kapal\FrmMonPointKapalRanking.resx">
+      <DependentUpon>FrmMonPointKapalRanking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmFotoView.resx">
+      <DependentUpon>FrmFotoView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Rekening\FrmMonPercentagePancang.resx">
+      <DependentUpon>FrmMonPercentagePancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Supplier\FrmMonSupplier.resx">
+      <DependentUpon>FrmMonSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Tambang Kapal\FrmMonProgressTambangKapal.resx">
+      <DependentUpon>FrmMonProgressTambangKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Kapal\Tambang Kapal\FrmMonRekapPengajuanTambangKapal.resx">
+      <DependentUpon>FrmMonRekapPengajuanTambangKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Rekap Upah Bongkar\FrmMonRekapPengajuanUpahBongkar.resx">
+      <DependentUpon>FrmMonRekapPengajuanUpahBongkar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Verifikasi Timbang Pancang\FrmMonVerifikasiTimbangPCG.resx">
+      <DependentUpon>FrmMonVerifikasiTimbangPCG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Cetak Label Petani\FrmTrnCetakLabelPetani.resx">
+      <DependentUpon>FrmTrnCetakLabelPetani.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Inventaris\frmtrnapprovalpengeluaranbarang\FrmTrnApprovalPengeluaranBarang.resx">
+      <DependentUpon>FrmTrnApprovalPengeluaranBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Inventaris\frmtrnapprovalpengeluaranbarang\FrmTrnApprovalPengeluaranBarangDialog.resx">
+      <DependentUpon>FrmTrnApprovalPengeluaranBarangDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Inventaris\FrmTrnBarangKeluar.resx">
+      <DependentUpon>FrmTrnBarangKeluar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Inventaris\frmtrnbarangmasuk\FrmTrnBarangMasuk.resx">
+      <DependentUpon>FrmTrnBarangMasuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Inventaris\frmtrnbarangmasuk\FrmTrnRestoreBarangMasuk.resx">
+      <DependentUpon>FrmTrnRestoreBarangMasuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Inventaris\FrmTrnTerimaNotaDiPabrik.resx">
+      <DependentUpon>FrmTrnTerimaNotaDiPabrik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Absensi\FrmMonUangMakanPCGDataPancangManual.resx">
+      <DependentUpon>FrmMonUangMakanPCGDataPancangManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Personil Pancang\FrmTrnAbsensiPancangManual.resx">
+      <DependentUpon>FrmTrnAbsensiPancangManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Absensi\FrmTrnPergeseranPancang.resx">
+      <DependentUpon>FrmTrnPergeseranPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInput.resx">
+      <DependentUpon>FrmTrnPengajuanPenerimaanNotaInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNota.resx">
+      <DependentUpon>FrmTrnPengajuanPenerimaanNota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInputPECU.resx">
+      <DependentUpon>FrmTrnPengajuanPenerimaanNotaInputPECU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Pengajuan Penerimaan Nota\FrmTrnPengajuanPenerimaanNotaInputFindNota.resx">
+      <DependentUpon>FrmTrnPengajuanPenerimaanNotaInputFindNota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnDokingKapalApproval.resx">
+      <DependentUpon>FrmTrnDokingKapalApproval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnDokingKapal.resx">
+      <DependentUpon>FrmTrnDokingKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnDokingKapalPerencanaan.resx">
+      <DependentUpon>FrmTrnDokingKapalPerencanaan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnDokingKapalRealisasi.resx">
+      <DependentUpon>FrmTrnDokingKapalRealisasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\WO Pancang\FrmTrnApproval1DanInputBarangPengajuanWoPancang.resx">
+      <DependentUpon>FrmTrnApproval1DanInputBarangPengajuanWoPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\WO Pancang\FrmTrnApproval1DanInputBarangPengajuanWoPancangFind.resx">
+      <DependentUpon>FrmTrnApproval1DanInputBarangPengajuanWoPancangFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\WO Pancang\FrmTrnPembayaranWoPancang.resx">
+      <DependentUpon>FrmTrnPembayaranWoPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\WO Pancang\FrmTrnUploadBaWoPancang.resx">
+      <DependentUpon>FrmTrnUploadBaWoPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\WO Pancang\FrmTrnUploadInspectionWoPancang.resx">
+      <DependentUpon>FrmTrnUploadInspectionWoPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Harga Nego\FrmInputHargaNego.resx">
+      <DependentUpon>FrmInputHargaNego.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Komisi\FrmTrnKomisi.resx">
+      <DependentUpon>FrmTrnKomisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Komisi\FrmTrnKomisiFind.resx">
+      <DependentUpon>FrmTrnKomisiFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancang.resx">
+      <DependentUpon>FrmTrnPembelianNonPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Pembelian Non Pancang\FrmTrnPembelianNonPancangShow.resx">
+      <DependentUpon>FrmTrnPembelianNonPancangShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkarFindPECU.resx">
+      <DependentUpon>FrmTrnPenjualanNonDataBongkarFindPECU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanParigi.resx">
+      <DependentUpon>FrmTrnPenjualanParigi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRestoreFakturPabrik.resx">
+      <DependentUpon>FrmTrnPenjualanRestoreFakturPabrik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkar.resx">
+      <DependentUpon>FrmTrnPenjualanNonDataBongkar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRSUPDanPSG.resx">
+      <DependentUpon>FrmTrnPenjualanRSUPDanPSG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualan.resx">
+      <DependentUpon>FrmTrnPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRSUPDanPSGFindKapal.resx">
+      <DependentUpon>FrmTrnPenjualanRSUPDanPSGFindKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan\FrmTrnPenjualanRestore.resx">
+      <DependentUpon>FrmTrnPenjualanRestore.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Penjualan\Penjualan Non Data Bongkar\FrmTrnPenjualanNonDataBongkarShow.resx">
+      <DependentUpon>FrmTrnPenjualanNonDataBongkarShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnPointKapal.resx">
+      <DependentUpon>FrmTrnPointKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnPointKapalFind.resx">
+      <DependentUpon>FrmTrnPointKapalFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Approval\Loyalty\FrmApprovelUserToko.resx">
+      <DependentUpon>FrmApprovelUserToko.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Approval\Loyalty\FrmApprovalTokoPancang.resx">
+      <DependentUpon>FrmApprovalTokoPancang.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmPhotoUser.resx">
+      <DependentUpon>FrmPhotoUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnBuktiTrfPengajuanPoin.resx">
+      <DependentUpon>FrmTrnBuktiTrfPengajuanPoin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnBuktiTrfPengajuanPoinFind.resx">
+      <DependentUpon>FrmTrnBuktiTrfPengajuanPoinFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnPoinLoyalty.resx">
+      <DependentUpon>FrmTrnPoinLoyalty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnPoinLoyaltyFind.resx">
+      <DependentUpon>FrmTrnPoinLoyaltyFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnPoinLoyaltyFindNew.resx">
+      <DependentUpon>FrmTrnPoinLoyaltyFindNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnPoinPengajuan.resx">
+      <DependentUpon>FrmTrnPoinPengajuan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnPoinPengajuanFind.resx">
+      <DependentUpon>FrmTrnPoinPengajuanFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnTukarPoin.resx">
+      <DependentUpon>FrmTrnTukarPoin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Loyalty\FrmTrnTukarPoinNew.resx">
+      <DependentUpon>FrmTrnTukarPoinNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasi.resx">
+      <DependentUpon>FrmTrnPotonganRelasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasiFind.resx">
+      <DependentUpon>FrmTrnPotonganRelasiFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Potongan Relasi\FrmTrnPotonganRelasiVoucher.resx">
+      <DependentUpon>FrmTrnPotonganRelasiVoucher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Deklarasi Harian Angkutan Buah Kelapa\FrmTrnPremiAsuransi.resx">
+      <DependentUpon>FrmTrnPremiAsuransi.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Deklarasi Harian Angkutan Buah Kelapa\FrmTrnPremiAsuransiFind.resx">
+      <DependentUpon>FrmTrnPremiAsuransiFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPI.resx">
+      <DependentUpon>FrmTrnTambangKapalBPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPIFind.resx">
+      <DependentUpon>FrmTrnTambangKapalBPIFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalBPIFindKapal.resx">
+      <DependentUpon>FrmTrnTambangKapalBPIFindKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Tambang Kapal\FrmTrnTambangKapalTransitBPI.resx">
+      <DependentUpon>FrmTrnTambangKapalTransitBPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Upah Bongkar\FrmTrnUpahBongkarInput.resx">
+      <DependentUpon>FrmTrnUpahBongkarInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Upah Bongkar\FrmTrnUpahBongkar.resx">
+      <DependentUpon>FrmTrnUpahBongkar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmKeteranganDelete.resx">
+      <DependentUpon>FrmKeteranganDelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnUbahTujuan.resx">
+      <DependentUpon>FrmTrnUbahTujuan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Komisi\FrmMstFee.resx">
+      <DependentUpon>FrmMstFee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kapal\FrmMstKaptenKapal.resx">
+      <DependentUpon>FrmMstKaptenKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Premi\FrmMstPremiPengawasdanIPFind.resx">
+      <DependentUpon>FrmMstPremiPengawasdanIPFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Premi\FrmMstLevelBonus.resx">
+      <DependentUpon>FrmMstLevelBonus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Approval\Rekening Supplier\FrmApproveRekening.resx">
+      <DependentUpon>FrmApproveRekening.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Supplier\Rekening\FrmMstRekening.resx">
+      <DependentUpon>FrmMstRekening.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuat.resx">
+      <DependentUpon>FrmMstUpahBongkarMuat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatP1.resx">
+      <DependentUpon>FrmMstUpahBongkarMuatP1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatShow.resx">
+      <DependentUpon>FrmMstUpahBongkarMuatShow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Tarif\Tambang Kapal\FrmMstUpahBongkarMuatShowP1.resx">
+      <DependentUpon>FrmMstUpahBongkarMuatShowP1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Premi\FrmMstPremiPengawasandIP.resx">
+      <DependentUpon>FrmMstPremiPengawasandIP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Premi\FrmMonRelasiLoyal.resx">
+      <DependentUpon>FrmMonRelasiLoyal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Nota\Nota\FrmMonKapalCheckIndanOTW.resx">
+      <DependentUpon>FrmMonKapalCheckIndanOTW.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Dialog\FrmDlgSupplier.resx">
+      <DependentUpon>FrmDlgSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Laporan Muat Kelapa\FrmLaporanMuatKelapa.resx">
+      <DependentUpon>FrmLaporanMuatKelapa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Nota\Nota\FrmMonPrintNotaALL.resx">
+      <DependentUpon>FrmMonPrintNotaALL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Rekening\FrmMonRekeningRelasiPcgApprove.resx">
+      <DependentUpon>FrmMonRekeningRelasiPcgApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Monitoring\Rekening\FrmMonRekeningRelasiPcg.resx">
+      <DependentUpon>FrmMonRekeningRelasiPcg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Premi\FrmPremiInspektor.resx">
+      <DependentUpon>FrmPremiInspektor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Personil Pancang\FrmTrnUangMakanPersonilPancang.resx">
+      <DependentUpon>FrmTrnUangMakanPersonilPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Invoice Pembayaran Kelapa\FrmTrnInvoicePembayaranKelapa.resx">
+      <DependentUpon>FrmTrnInvoicePembayaranKelapa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Premi\FrmTrnPremiPengawas.resx">
+      <DependentUpon>FrmTrnPremiPengawas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnUpdateTripKapal.resx">
+      <DependentUpon>FrmTrnUpdateTripKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmUtlUserOneLoginRequest.resx">
+      <DependentUpon>FrmUtlUserOneLoginRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Master\Kapal\FrmMstKapal.resx">
+      <DependentUpon>FrmMstKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmFotoNota.resx">
+      <DependentUpon>FrmFotoNota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Transaction\Kapal\FrmTrnInputTrip.resx">
+      <DependentUpon>FrmTrnInputTrip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmUtlUpdateVersion.resx">
+      <DependentUpon>FrmUtlUpdateVersion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmDashboard.resx">
+      <DependentUpon>FrmDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmUtlAksesPancang.resx">
+      <DependentUpon>FrmUtlAksesPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmUtlMenu.resx">
+      <DependentUpon>FrmUtlMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmUtlMenuAkses.resx">
+      <DependentUpon>FrmUtlMenuAkses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmUtlMenuVisibel.resx">
+      <DependentUpon>FrmUtlMenuVisibel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmUtlRole.resx">
+      <DependentUpon>FrmUtlRole.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\FrmUtlUser.resx">
+      <DependentUpon>FrmUtlUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\Utility\MsgBoxCustom.resx">
+      <DependentUpon>MsgBoxCustom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report\Approval Penerimaan\RptRekapApprovalPenerimaan.rdlc" />
+    <EmbeddedResource Include="Reports\Report\Informasi Penerimaan Bahan Baku\RptInformasiPenerimaanBahanBaku.rdlc" />
+    <EmbeddedResource Include="Reports\Report\QRCode.rdlc" />
+    <EmbeddedResource Include="Reports\Report\QRCode_.rdlc" />
+    <EmbeddedResource Include="Reports\Report\Report1.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptAngkutanBuahKelapa.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptAngkutanBuahKelapa2P1.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptAngkutanBuahKelapaP1.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptBiayaPemakaianSaranaMuatKBCash.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptFotoRelasiPCG.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptKontrolPembayaranKelapaPancang.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptKontrolPembayaranKelapaPancangPisahP1danP2.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptMemoHarga.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptAngkutanBuahKelapa2.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptBarcodePCGNonRekening.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptBarcodePCG_.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranUpahBongkarAllP1.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranUpahBongkarMuatp1.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranUpahBongkarMuatUM.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranViaUMP1.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranViaUMP2.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptPengajuanPembayaranPoin.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptQRBarcode.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptRekapDataPembayaranKlaimPoin.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptRekapDataPetaniPembayaranKOM.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptRekeningRelasi.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptRekeningRelasiPancang.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptRequestPenukaranpoin.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptRkpKapalPcg.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptSuratJalan.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptBiayaPemakaianSaranaMuatKB.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranViaUM.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptRekapDataPetaniPembayaranUBM.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptFeeLahanPancang.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptFotoNota.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptInvoicePembayaranKelapa.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranUBPerPancang.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranUpahBongkarAll.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPembayaranUpahBongkarMuat.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptNota.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPotBelanja.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptPrintFoto.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPrintNotaAll.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptPrintNotaAllNew.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptRekapDataPetaniPembayaranKB.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptRencanaPenerimaanKelapa.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptNK.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptTrnUpahBongkar.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rpttrnuangmukaupahbongkarmuat.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rpttrnupahbongkar2P1.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rpttrnupahbongkar2.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rpttrnupahbongkar3.rdlc" />
+    <EmbeddedResource Include="Reports\Report\rptUangMakanPancang.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptUangMakanPCG.rdlc" />
+    <EmbeddedResource Include="Reports\Report\RptUBM.rdlc" />
+    <EmbeddedResource Include="Reports\Form\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmFotoRekening.resx">
+      <DependentUpon>FrmFotoRekening.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptAngkutanBuahKapal.resx">
+      <DependentUpon>FrmRptAngkutanBuahKapal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptAngkutanBuahKapalInvoice.resx">
+      <DependentUpon>FrmRptAngkutanBuahKapalInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptInvoicePembayaranKelapa.resx">
+      <DependentUpon>FrmRptInvoicePembayaranKelapa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptKontrolPembayaranKelapaPancang.resx">
+      <DependentUpon>FrmRptKontrolPembayaranKelapaPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptMonRekeningRelasi.resx">
+      <DependentUpon>FrmRptMonRekeningRelasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptMonRekeningRelasiPancang.resx">
+      <DependentUpon>FrmRptMonRekeningRelasiPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptPembayaranUpahBongkarAll.resx">
+      <DependentUpon>FrmRptPembayaranUpahBongkarAll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptPembayaranUpahBongkarMuat.resx">
+      <DependentUpon>FrmRptPembayaranUpahBongkarMuat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptQRbarcode.resx">
+      <DependentUpon>FrmRptQRbarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptRekapDataPetaniPembayaranKB.resx">
+      <DependentUpon>FrmRptRekapDataPetaniPembayaranKB.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptRencanaPenerimaanKelapa.resx">
+      <DependentUpon>FrmRptRencanaPenerimaanKelapa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptUangMakanPCG.resx">
+      <DependentUpon>FrmRptUangMakanPCG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptViewFilePdf_.resx">
+      <DependentUpon>FrmRptViewFilePdf_.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptViewFoto.resx">
+      <DependentUpon>FrmRptViewFoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\LoyaltyPoin\FrmRptPembayaranLoyalty.resx">
+      <DependentUpon>FrmRptPembayaranLoyalty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\LoyaltyPoin\FrmRptRequestPenukaranPoint.resx">
+      <DependentUpon>FrmRptRequestPenukaranPoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptTest.resx">
+      <DependentUpon>FrmRptTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Form\FrmRptUangMakanPancang.resx">
+      <DependentUpon>FrmRptUangMakanPancang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report\Tambang Kapal\RptRekapTambangKapal.rdlc" />
+    <EmbeddedResource Include="Reports\Report\Upah Bongkar\RptRekapUpahBongkar.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OpenTK.dll.config" />
+    <None Include="Reports\Dataset\DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\Dataset\DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\dsangkutanbuahkelapa.xsc">
+      <DependentUpon>dsangkutanbuahkelapa.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\dsangkutanbuahkelapa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsangkutanbuahkelapa.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\dsangkutanbuahkelapa.xss">
+      <DependentUpon>dsangkutanbuahkelapa.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSFeeLahanPancang.xsc">
+      <DependentUpon>DSFeeLahanPancang.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSFeeLahanPancang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFeeLahanPancang.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSFeeLahanPancang.xss">
+      <DependentUpon>DSFeeLahanPancang.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\dsharga.xsc">
+      <DependentUpon>dsharga.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\dsharga.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsharga.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\dsharga.xss">
+      <DependentUpon>dsharga.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSInvoicePembayaranKelapa.xsc">
+      <DependentUpon>DSInvoicePembayaranKelapa.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSInvoicePembayaranKelapa.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSInvoicePembayaranKelapa.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSInvoicePembayaranKelapa.xss">
+      <DependentUpon>DSInvoicePembayaranKelapa.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSMonLaporanKelapaBPI.xsc">
+      <DependentUpon>DSMonLaporanKelapaBPI.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSMonLaporanKelapaBPI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMonLaporanKelapaBPI.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSMonLaporanKelapaBPI.xss">
+      <DependentUpon>DSMonLaporanKelapaBPI.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSMonRekening.xsc">
+      <DependentUpon>DSMonRekening.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSMonRekening.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMonRekening.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSMonRekening.xss">
+      <DependentUpon>DSMonRekening.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DsMonRkpKapalPcg.xsc">
+      <DependentUpon>DsMonRkpKapalPcg.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DsMonRkpKapalPcg.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsMonRkpKapalPcg.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DsMonRkpKapalPcg.xss">
+      <DependentUpon>DsMonRkpKapalPcg.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSPembayaranKT.xsc">
+      <DependentUpon>DSPembayaranKT.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSPembayaranKT.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSPembayaranKT.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\Dataset\DSPembayaranKT.xss">
+      <DependentUpon>DSPembayaranKT.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSQRCode.xsc">
+      <DependentUpon>DSQRCode.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSQRCode.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSQRCode.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSQRCode.xss">
+      <DependentUpon>DSQRCode.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSQRCodeNew.xsc">
+      <DependentUpon>DSQRCodeNew.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSQRCodeNew.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSQRCodeNew.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSQRCodeNew.xss">
+      <DependentUpon>DSQRCodeNew.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSRekapDataPetani.xsc">
+      <DependentUpon>DSRekapDataPetani.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSRekapDataPetani.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRekapDataPetani.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSRekapDataPetani.xss">
+      <DependentUpon>DSRekapDataPetani.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSRekapPengajuanBPI.xsc">
+      <DependentUpon>DSRekapPengajuanBPI.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSRekapPengajuanBPI.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRekapPengajuanBPI.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSRekapPengajuanBPI.xss">
+      <DependentUpon>DSRekapPengajuanBPI.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DsRequestPenukaranPoint.xsc">
+      <DependentUpon>DsRequestPenukaranPoint.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DsRequestPenukaranPoint.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsRequestPenukaranPoint.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\Dataset\DsRequestPenukaranPoint.xss">
+      <DependentUpon>DsRequestPenukaranPoint.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSTokoPancang.xsc">
+      <DependentUpon>DSTokoPancang.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\DSTokoPancang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSTokoPancang.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Reports\Dataset\DSTokoPancang.xss">
+      <DependentUpon>DSTokoPancang.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Reports\Dataset\RMPAppDataSet.xsc">
+      <DependentUpon>RMPAppDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Dataset\RMPAppDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RMPAppDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\Dataset\RMPAppDataSet.xss">
+      <DependentUpon>RMPAppDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Report\RptBarcodePCG.rdlc" />
+    <None Include="Resources\PSGCOLOR.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSGC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Form\Approval\Penjualan_\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserID.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-message.png" />
+    <None Include="Resources\loupe_25px.png" />
+    <None Include="Resources\upload_16px.png" />
+    <None Include="Resources\loupe_16px.png" />
+    <None Include="Resources\slide_left.png" />
+    <None Include="Resources\slide_right.png" />
+    <None Include="Resources\detail_button_01112025.png" />
+    <None Include="Resources\search_button_31102025.png" />
+    <EmbeddedResource Include="Resources\Resource_v2\msg_error.png" />
+    <EmbeddedResource Include="Resources\Resource_v2\msg_information.png" />
+    <EmbeddedResource Include="Resources\Resource_v2\msg_question.png" />
+    <EmbeddedResource Include="Resources\Resource_v2\msg_succes.png" />
+    <EmbeddedResource Include="Resources\Resource_v2\msg_warning.png" />
+    <None Include="Resources\imgTransparent.png" />
+    <None Include="Resources\image.png" />
+    <None Include="Resources\ButtonCari_16px.png" />
+    <None Include="Resources\photo.png" />
+    <None Include="Resources\ButtonEdit_16px.png" />
+    <None Include="Resources\list20px.png" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll" />
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll" />
+    <Content Include="SqlServerTypes\x86\msvcr120.dll" />
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll" />
+    <None Include="Resources\ResourceOther\Back.png" />
+    <Content Include="cc.ico" />
+    <None Include="Resources\ResourceOther\trash.png" />
+    <None Include="Resources\ResourceOther\stop.png" />
+    <None Include="Resources\ResourceOther\icons8-print-32.png" />
+    <None Include="Resources\1423650856_79534.ico" />
+    <None Include="Resources\ResourceOther\Close.png" />
+    <None Include="Resources\ResourceOther\Print.png" />
+    <None Include="Resources\ResourceOther\prnt.png" />
+    <None Include="Resources\ResourceOther\Excel.png" />
+    <None Include="Resources\ResourceOther\Exit.png" />
+    <None Include="Resources\ResourceOther\prnt2.png" />
+    <None Include="Resources\ResourceOther\icons8-print-16.png" />
+    <None Include="Resources\4157080.png" />
+    <None Include="Resources\3712271.png" />
+    <None Include="Resources\41570801.png" />
+    <None Include="Resources\3407006.png" />
+    <None Include="Resources\565d59130cbccc049c86f82664b4772f.jpg" />
+    <None Include="Resources\5085391.jpg" />
+    <None Include="Resources\1900461.png" />
+    <Content Include="My Project\Loader.cs" />
+    <Content Include="My Project\readme.htm" />
+    <Content Include="Resources\5search16.png" />
+    <None Include="Resources\no.png" />
+    <None Include="Resources\5search161.png" />
+    <None Include="Resources\icons8-print-251.png" />
+    <None Include="Resources\find231.jpg" />
+    <None Include="Resources\fin111d.jpg" />
+    <None Include="Resources\ResourceOther\searchh.png" />
+    <None Include="Resources\Background.jpg" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\pngtree-port-cargo-ship-transport-logistics-seaport-vector-template-with-an-isometric-png-image_1495507.jpg" />
+    <None Include="Resources\Group2.jpg" />
+    <None Include="Resources\Group2.png" />
+    <None Include="Resources\Group.png" />
+    <None Include="Resources\AddPSN.png" />
+    <None Include="Resources\ModifyPSN.png" />
+    <None Include="Resources\SavePSN.png" />
+    <None Include="Resources\ExitPSN.png" />
+    <None Include="Resources\NotaManual.png" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\Doc1.png" />
+    <None Include="Resources\Doc2.png" />
+    <None Include="Resources\Petani.png" />
+    <None Include="Resources\Belanja.png" />
+    <None Include="Resources\Cashback2.png" />
+    <None Include="Resources\unnamed1.png" />
+    <None Include="Resources\Kargo.png" />
+    <None Include="Resources\KapalTenggelam.png" />
+    <None Include="Resources\Invoice.png" />
+    <None Include="Resources\Surat.ico" />
+    <None Include="Resources\User_.png" />
+    <None Include="Resources\cpolfix.png" />
+    <None Include="Resources\backcp.jpg" />
+    <None Include="Resources\UserAndroid.png" />
+    <None Include="Resources\PCG.png" />
+    <None Include="Resources\uploadoke.png" />
+    <None Include="Resources\uploadtidakoke.png" />
+    <None Include="Resources\Swingvy.png" />
+    <None Include="Resources\RekButton.png" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\kapppalllll-removebg-preview.png" />
+    <None Include="Resources\pomppong-removebg-preview.png" />
+    <None Include="Resources\kapal-removebg-preview.png" />
+    <None Include="Resources\water-removebg-preview.png" />
+    <None Include="Resources\ACCC.png" />
+    <None Include="Resources\undraw_Questions_re_1fy7.png" />
+    <None Include="Resources\istockphoto-922024224-612x612.jpg" />
+    <None Include="Resources\addphoto.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\editt.png" />
+    <None Include="Resources\selfie1.png" />
+    <None Include="Resources\image-not-found-1-scaled-1150x6471.png" />
+    <None Include="Resources\header.png" />
+    <None Include="Resources\sa.png" />
+    <None Include="Resources\Add1.png" />
+    <None Include="Resources\download__1_.jpg" />
+    <None Include="Resources\image-not-found-1-scaled-1150x647.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\selfie.png" />
+    <None Include="Resources\transfer %282%29.png" />
+    <None Include="Resources\transfer.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\searchh.png" />
+    <None Include="Resources\prnt.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\_stop.png" />
+    <None Include="Resources\_Exit.png" />
+    <None Include="Resources\excel1.png" />
+    <None Include="Resources\Back.png" />
+    <None Include="Resources\no_image.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\Untitled.png" />
+    <None Include="Resources\Add11.png" />
+    <None Include="Resources\ResourceOther\searchh1.png" />
+    <None Include="Resources\icons8-print-32.png" />
+    <None Include="Resources\quota.png" />
+    <None Include="Resources\edit21.png" />
+    <None Include="Resources\DELETED_20.png" />
+    <None Include="Resources\PRINTF1.png" />
+    <None Include="Resources\icons8-edit-20.png" />
+    <None Include="Resources\find20.png" />
+    <None Include="Resources\PRINTF2.png" />
+    <None Include="Resources\icons8-ship-20.png" />
+    <None Include="Resources\icons8-restart-20.png" />
+    <None Include="Resources\icons8-ship-64.png" />
+    <None Include="Resources\cashback-loyalty-program-concept-credit-or-debit-card-with-returned-coins-to-bank-account-refund-money-service-design-bonus-cash-back-symbol-illustration-free-vector.jpg" />
+    <None Include="Resources\icon_doc_receipt.png" />
+    <None Include="Resources\download %281%29.png" />
+    <None Include="Resources\rceipt.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\icons8-mail-64.png" />
+    <None Include="Resources\icons8-mail-64 %281%29.png" />
+    <None Include="Resources\download %286%29.jpg" />
+    <None Include="Resources\8-86715_accounting-software-icon-hd-png-download.png" />
+    <None Include="Resources\Untitled-1.jpg" />
+    <None Include="Resources\transparent-refresh-icon-reload-icon-reset-icon-5dbe14a6840921.0842978615727382145408.jpg" />
+    <None Include="Resources\download %287%29.jpg" />
+    <None Include="Resources\pagebuilder-teaser.png" />
+    <None Include="Resources\icons8-decrease-64.png" />
+    <None Include="Resources\icons8-flame-58.png" />
+    <None Include="Resources\icons8-flame-58 %281%29.png" />
+    <None Include="Resources\icons8-sync-64.png" />
+    <None Include="Resources\906310.png" />
+    <None Include="Resources\Excel-icon.png" />
+    <None Include="Resources\Excel-icon1.png" />
+    <None Include="Resources\icons8-microsoft-excel-2019-48.png" />
+    <None Include="Resources\icons8-close-window-50.png" />
+    <None Include="Resources\icons8-close-window-501.png" />
+    <None Include="Resources\icons8-close-window-100.png" />
+    <None Include="Resources\icons8-csv-64.png" />
+    <None Include="Resources\icons8-import-csv-48.png" />
+    <None Include="Resources\icons8-available-updates-40.png" />
+    <None Include="Resources\icons8-sync-48.png" />
+    <None Include="Resources\icons8-synchronize-40.png" />
+    <None Include="Resources\Banner600pixel.jpg" />
+    <None Include="Resources\QR.png" />
+    <None Include="Resources\icons8-ship-wheel-100.png" />
+    <None Include="Resources\icons8-ship-wheel-100 %282%29.png" />
+    <None Include="Resources\icons8-shipMINI-wheel-20.png" />
+    <None Include="Resources\icons8-cruise-ship-20.png" />
+    <None Include="Resources\icons8-ship-wheel-10.png" />
+    <None Include="Resources\icons8-ship-wheel-10 %281%29.png" />
+    <None Include="Resources\imageAs %281%29.jpg" />
+    <None Include="Resources\imageSAs %281%29.jpg" />
+    <None Include="Resources\download %287%291.jpg" />
+    <None Include="Resources\images %282%29.jpg" />
+    <None Include="Resources\images__2_.jpg" />
+    <None Include="Resources\IMAGE123.jpg" />
+    <None Include="Resources\IconToko .jpg" />
+    <None Include="Resources\IconToko22.png" />
+    <None Include="Resources\credit-card-payment.png" />
+    <None Include="Resources\ICOPAYMENT.png" />
+    <None Include="Resources\credit-card-payment1.png" />
+    <None Include="Resources\IMAGE1231.jpg" />
+    <None Include="Resources\dribbble.png" />
+    <None Include="Resources\CHECKLIST.png" />
+    <None Include="Resources\Elegantthemes-Beautiful-Flat-Check.ico" />
+    <None Include="Resources\Mattahan-Umicons-Check.ico" />
+    <None Include="Resources\Elegantthemes.16.png" />
+    <None Include="Resources\Mattahan.png" />
+    <None Include="Resources\lock1.png" />
+    <None Include="Resources\Designbolts-Free-Multimedia-Printer.512.png" />
+    <None Include="Resources\iconKapalDoking.jpg" />
+    <None Include="Resources\iconKapalDoking1.jpg" />
+    <None Include="Resources\Icon Realisasi Kapal.jpg" />
+    <None Include="Resources\Icon Realisasi Kapal.png" />
+    <None Include="Resources\pleaning.png" />
+    <None Include="Resources\Approval Kapal.jpg" />
+    <None Include="Resources\Monitoring.png" />
+    <None Include="Resources\Monitoring Kapal.jpg" />
+    <None Include="Resources\CancelAndCamera.png" />
+    <None Include="Resources\CheckAndCamera.png" />
+    <None Include="Resources\check2.png" />
+    <None Include="Resources\Fisherman%27s Captain.png" />
+    <None Include="Resources\icon_foto_16px.png" />
+    <None Include="Resources\icon_checkin_pelangsir.png" />
+    <None Include="Resources\ButtonHapus.png" />
+    <None Include="Resources\ButtonTambah.png" />
+    <None Include="Resources\ButtonPdf.png" />
+    <Content Include="Resources\poin.png" />
+    <None Include="Resources\poin1.png" />
+    <None Include="Resources\prop.png" />
+    <None Include="Resources\RMDLOGO3.png" />
+    <None Include="Resources\tools.png" />
+    <None Include="Resources\tools1.png" />
+    <None Include="Resources\Realisasi Kapal.jpg" />
+    <None Include="Resources\TombolKurang.png" />
+    <None Include="Resources\TombolTambah.png" />
+    <None Include="Resources\icons8-eye-50.png" />
+    <None Include="Resources\icons8-google-maps-48.png" />
+    <None Include="Resources\googlemaps.ico" />
+    <None Include="Resources\showpass.png" />
+    <None Include="Resources\icons8_stack_of_photos_26px.png" />
+    <None Include="Resources\icons8_stack_of_photos.ico" />
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcrobatAccessLib">
+      <Guid>{C523F390-9C83-11D3-9094-00104BD0D535}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.9\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.Win32.2.88.9\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.9\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.macOS.2.88.9\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0.3\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0.3\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets'))" />
+  </Target>
+  <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.2.88.9\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.9\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.9\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.9\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
+  <Import Project="..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0.3\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0.3\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets')" />
+</Project>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSInvoicePembayaranKelapa" targetNamespace="http://tempuri.org/DSInvoicePembayaranKelapa.xsd" xmlns:mstns="http://tempuri.org/DSInvoicePembayaranKelapa.xsd" xmlns="http://tempuri.org/DSInvoicePembayaranKelapa.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSInvoicePembayaranKelapa" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSInvoicePembayaranKelapa" msprop:Generator_UserDSName="DSInvoicePembayaranKelapa">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtInvoiceKelapa" msprop:Generator_TableClassName="dtInvoiceKelapaDataTable" msprop:Generator_TableVarName="tabledtInvoiceKelapa" msprop:Generator_TablePropName="dtInvoiceKelapa" msprop:Generator_RowDeletingName="dtInvoiceKelapaRowDeleting" msprop:Generator_RowChangingName="dtInvoiceKelapaRowChanging" msprop:Generator_RowEvHandlerName="dtInvoiceKelapaRowChangeEventHandler" msprop:Generator_RowDeletedName="dtInvoiceKelapaRowDeleted" msprop:Generator_UserTableName="dtInvoiceKelapa" msprop:Generator_RowChangedName="dtInvoiceKelapaRowChanged" msprop:Generator_RowEvArgName="dtInvoiceKelapaRowChangeEvent" msprop:Generator_RowClassName="dtInvoiceKelapaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kapal" msprop:Generator_ColumnVarNameInTable="columnKapal" msprop:Generator_ColumnPropNameInRow="Kapal" msprop:Generator_ColumnPropNameInTable="KapalColumn" msprop:Generator_UserColumnName="Kapal" type="xs:string" minOccurs="0" />
+              <xs:element name="Kap" msprop:Generator_ColumnVarNameInTable="columnKap" msprop:Generator_ColumnPropNameInRow="Kap" msprop:Generator_ColumnPropNameInTable="KapColumn" msprop:Generator_UserColumnName="Kap" type="xs:string" minOccurs="0" />
+              <xs:element name="Trip" msprop:Generator_ColumnVarNameInTable="columnTrip" msprop:Generator_ColumnPropNameInRow="Trip" msprop:Generator_ColumnPropNameInTable="TripColumn" msprop:Generator_UserColumnName="Trip" type="xs:string" minOccurs="0" />
+              <xs:element name="Pancang" msprop:Generator_ColumnVarNameInTable="columnPancang" msprop:Generator_ColumnPropNameInRow="Pancang" msprop:Generator_ColumnPropNameInTable="PancangColumn" msprop:Generator_UserColumnName="Pancang" type="xs:string" minOccurs="0" />
+              <xs:element name="NettoAkhir" msprop:Generator_ColumnVarNameInTable="columnNettoAkhir" msprop:Generator_ColumnPropNameInRow="NettoAkhir" msprop:Generator_ColumnPropNameInTable="NettoAkhirColumn" msprop:Generator_UserColumnName="NettoAkhir" type="xs:string" minOccurs="0" />
+              <xs:element name="Harga" msprop:Generator_ColumnVarNameInTable="columnHarga" msprop:Generator_ColumnPropNameInRow="Harga" msprop:Generator_ColumnPropNameInTable="HargaColumn" msprop:Generator_UserColumnName="Harga" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalHarga" msprop:Generator_ColumnVarNameInTable="columnTotalHarga" msprop:Generator_ColumnPropNameInRow="TotalHarga" msprop:Generator_ColumnPropNameInTable="TotalHargaColumn" msprop:Generator_UserColumnName="TotalHarga" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

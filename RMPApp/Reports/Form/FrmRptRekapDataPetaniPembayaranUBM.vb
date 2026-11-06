@@ -1,0 +1,3 @@
+﻿Public Class FrmRptRekapDataPetaniPembayaranUBM
+
+End Class

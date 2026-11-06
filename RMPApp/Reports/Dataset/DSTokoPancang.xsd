@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtPotBelanja" msprop:Generator_TableClassName="dtPotBelanjaDataTable" msprop:Generator_TableVarName="tabledtPotBelanja" msprop:Generator_RowChangedName="dtPotBelanjaRowChanged" msprop:Generator_TablePropName="dtPotBelanja" msprop:Generator_RowDeletingName="dtPotBelanjaRowDeleting" msprop:Generator_RowChangingName="dtPotBelanjaRowChanging" msprop:Generator_RowEvHandlerName="dtPotBelanjaRowChangeEventHandler" msprop:Generator_RowDeletedName="dtPotBelanjaRowDeleted" msprop:Generator_RowClassName="dtPotBelanjaRow" msprop:Generator_UserTableName="dtPotBelanja" msprop:Generator_RowEvArgName="dtPotBelanjaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TransDate" msprop:Generator_ColumnVarNameInTable="columnTransDate" msprop:Generator_ColumnPropNameInRow="TransDate" msprop:Generator_ColumnPropNameInTable="TransDateColumn" msprop:Generator_UserColumnName="TransDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" msprop:Generator_UserColumnName="Total" type="xs:string" minOccurs="0" />
+              <xs:element name="KetBayar" msprop:Generator_ColumnVarNameInTable="columnKetBayar" msprop:Generator_ColumnPropNameInRow="KetBayar" msprop:Generator_ColumnPropNameInTable="KetBayarColumn" msprop:Generator_UserColumnName="KetBayar" type="xs:string" minOccurs="0" />
+              <xs:element name="TransID" msprop:Generator_ColumnVarNameInTable="columnTransID" msprop:Generator_ColumnPropNameInRow="TransID" msprop:Generator_ColumnPropNameInTable="TransIDColumn" msprop:Generator_UserColumnName="TransID" type="xs:string" minOccurs="0" />
+              <xs:element name="sumTotal" msprop:Generator_ColumnVarNameInTable="columnsumTotal" msprop:Generator_ColumnPropNameInRow="sumTotal" msprop:Generator_ColumnPropNameInTable="sumTotalColumn" msprop:Generator_UserColumnName="sumTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="sumTerbilang" msprop:Generator_ColumnVarNameInTable="columnsumTerbilang" msprop:Generator_ColumnPropNameInRow="sumTerbilang" msprop:Generator_ColumnPropNameInTable="sumTerbilangColumn" msprop:Generator_UserColumnName="sumTerbilang" type="xs:string" minOccurs="0" />
+              <xs:element name="sumKodebayar" msprop:Generator_ColumnVarNameInTable="columnsumKodebayar" msprop:Generator_ColumnPropNameInRow="sumKodebayar" msprop:Generator_ColumnPropNameInTable="sumKodebayarColumn" msprop:Generator_UserColumnName="sumKodebayar" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_UserColumnName="CreatedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="Relasi" msprop:Generator_ColumnVarNameInTable="columnRelasi" msprop:Generator_ColumnPropNameInRow="Relasi" msprop:Generator_ColumnPropNameInTable="RelasiColumn" msprop:Generator_UserColumnName="Relasi" type="xs:string" minOccurs="0" />
+              <xs:element name="PrintedBy" msprop:Generator_ColumnVarNameInTable="columnPrintedBy" msprop:Generator_ColumnPropNameInRow="PrintedBy" msprop:Generator_ColumnPropNameInTable="PrintedByColumn" msprop:Generator_UserColumnName="PrintedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="PrintedDate" msprop:Generator_ColumnVarNameInTable="columnPrintedDate" msprop:Generator_ColumnPropNameInRow="PrintedDate" msprop:Generator_ColumnPropNameInTable="PrintedDateColumn" msprop:Generator_UserColumnName="PrintedDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtSummary" msprop:Generator_TableClassName="dtSummaryDataTable" msprop:Generator_TableVarName="tabledtSummary" msprop:Generator_RowChangedName="dtSummaryRowChanged" msprop:Generator_TablePropName="dtSummary" msprop:Generator_RowDeletingName="dtSummaryRowDeleting" msprop:Generator_RowChangingName="dtSummaryRowChanging" msprop:Generator_RowEvHandlerName="dtSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="dtSummaryRowDeleted" msprop:Generator_RowClassName="dtSummaryRow" msprop:Generator_UserTableName="dtSummary" msprop:Generator_RowEvArgName="dtSummaryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sumTotal" msprop:Generator_ColumnVarNameInTable="columnsumTotal" msprop:Generator_ColumnPropNameInRow="sumTotal" msprop:Generator_ColumnPropNameInTable="sumTotalColumn" msprop:Generator_UserColumnName="sumTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="sumTerbilang" msprop:Generator_ColumnVarNameInTable="columnsumTerbilang" msprop:Generator_ColumnPropNameInRow="sumTerbilang" msprop:Generator_ColumnPropNameInTable="sumTerbilangColumn" msprop:Generator_UserColumnName="sumTerbilang" type="xs:string" minOccurs="0" />
+              <xs:element name="sumKodebayar" msprop:Generator_ColumnVarNameInTable="columnsumKodebayar" msprop:Generator_ColumnPropNameInRow="sumKodebayar" msprop:Generator_ColumnPropNameInTable="sumKodebayarColumn" msprop:Generator_UserColumnName="sumKodebayar" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedBy" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_UserColumnName="CreatedBy" type="xs:string" minOccurs="0" />
+              <xs:element name="Relasi" msprop:Generator_ColumnVarNameInTable="columnRelasi" msprop:Generator_ColumnPropNameInRow="Relasi" msprop:Generator_ColumnPropNameInTable="RelasiColumn" msprop:Generator_UserColumnName="Relasi" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtPrintNota" msprop:Generator_TableClassName="dtPrintNotaDataTable" msprop:Generator_TableVarName="tabledtPrintNota" msprop:Generator_TablePropName="dtPrintNota" msprop:Generator_RowDeletingName="dtPrintNotaRowDeleting" msprop:Generator_RowChangingName="dtPrintNotaRowChanging" msprop:Generator_RowEvHandlerName="dtPrintNotaRowChangeEventHandler" msprop:Generator_RowDeletedName="dtPrintNotaRowDeleted" msprop:Generator_UserTableName="dtPrintNota" msprop:Generator_RowChangedName="dtPrintNotaRowChanged" msprop:Generator_RowEvArgName="dtPrintNotaRowChangeEvent" msprop:Generator_RowClassName="dtPrintNotaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoNota" msprop:Generator_ColumnVarNameInTable="columnNoNota" msprop:Generator_ColumnPropNameInRow="NoNota" msprop:Generator_ColumnPropNameInTable="NoNotaColumn" msprop:Generator_UserColumnName="NoNota" type="xs:string" minOccurs="0" />
+              <xs:element name="Pancang" msprop:Generator_ColumnVarNameInTable="columnPancang" msprop:Generator_ColumnPropNameInRow="Pancang" msprop:Generator_ColumnPropNameInTable="PancangColumn" msprop:Generator_UserColumnName="Pancang" type="xs:string" minOccurs="0" />
+              <xs:element name="Kapal" msprop:Generator_ColumnVarNameInTable="columnKapal" msprop:Generator_ColumnPropNameInRow="Kapal" msprop:Generator_ColumnPropNameInTable="KapalColumn" msprop:Generator_UserColumnName="Kapal" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalRupiah" msprop:Generator_ColumnVarNameInTable="columnTotalRupiah" msprop:Generator_ColumnPropNameInRow="TotalRupiah" msprop:Generator_ColumnPropNameInTable="TotalRupiahColumn" msprop:Generator_UserColumnName="TotalRupiah" type="xs:string" minOccurs="0" />
+              <xs:element name="TransID" msprop:Generator_ColumnVarNameInTable="columnTransID" msprop:Generator_ColumnPropNameInRow="TransID" msprop:Generator_ColumnPropNameInTable="TransIDColumn" msprop:Generator_UserColumnName="TransID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
