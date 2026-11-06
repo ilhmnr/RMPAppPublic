@@ -24,7 +24,7 @@ Audit ini memetakan referensi assembly dan pemakaian kode sebelum penghapusan. T
 
 Belum ada yang dihapus. Perlu pencarian menyeluruh di seluruh source, Designer, resource, dan konfigurasi runtime.
 
-- ClosedXML dan DocumentFormat.OpenXml
+- ClosedXML dan DocumentFormat.OpenXml (hanya ditemukan import `DocumentFormat.OpenXml.Spreadsheet` pada `ClsWebDAV.vb`; belum ditemukan pemakaian tipe OpenXML pada pemeriksaan file tersebut)
 - PDFsharp dan PdfSharp.Charting
 - Spire.Pdf
 - Syncfusion.Pdf.Base dan Syncfusion.Compression.Base
@@ -34,6 +34,12 @@ Belum ada yang dihapus. Perlu pencarian menyeluruh di seluruh source, Designer, 
 - Spire.Barcode
 - System.Text.Json beserta dependensi .NET 9
 - Referensi ComponentOne lawas yang memakai versi assembly `.2`
+
+## Temuan tambahan
+
+- `FrmLogin.vb` memakai Newtonsoft.Json, sehingga Newtonsoft.Json tidak boleh dihapus.
+- `ClsWebDAV.vb` mengimpor `DocumentFormat.OpenXml.Spreadsheet`, tetapi pemeriksaan awal belum menemukan pemakaian tipe OpenXML di isi file. Tetap telusuri seluruh proyek sebelum menyimpulkan paketnya tidak terpakai.
+- `FrmUtlUserOneLoginRequest.vb` dan `OneLoginService.vb` yang diperiksa belum menunjukkan referensi SignalR atau System.Text.Json. Belum cukup untuk menyatakan seluruh dependensi SignalR/System.Text.Json tidak dipakai.
 
 ## Anomali konfigurasi referensi
 
